@@ -12,7 +12,7 @@ def funkcja_input(funkcja):
     return f"    {funkcja.__name__}({', '.join(input_lines)})\n"
 
 
-def parsuj_prototyp(linie_prototypu, funkcje):
+def parsuj_prototyp(linie_prototypu, funkcje, naglokowa_funkcja=""):
     """
     Pobiera wszystkie komentarze początkowe, a następnie dodaje nagłówki funkcji
     (z zadanych funkcji w `funkcje`) i zamienia ich ciało na '...'.
@@ -26,11 +26,19 @@ def parsuj_prototyp(linie_prototypu, funkcje):
                 res += linia
             else:
                 wstep = False
+                res += naglokowa_funkcja
         elif any(linia.startswith(f"def {f.__name__}") for f in funkcje):
             res += "\n\n" + linia.replace("\n", "") + " ...\n\n"
         elif 'if __name__ == "__main__":\n' in linia:
             return res
     return res
+
+
+def lista_przesylaczowa():
+    return """class Node:
+    def __init__(self, val):
+        self.val = val
+        self.next: Node | None = None"""
 
 
 def main(nr_zadania, cialo_maina="\n\n"):

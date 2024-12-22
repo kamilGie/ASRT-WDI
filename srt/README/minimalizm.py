@@ -1,6 +1,5 @@
 from Bazowa import Bazowa
 
-
 from typing import List, Callable
 
 
