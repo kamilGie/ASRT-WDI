@@ -123,10 +123,11 @@ class prime(Bazowa):
         return f"""    def test_Nr{numerTestu:02}_{NazwaTestu}(self):
             f = io.StringIO()
             with redirect_stdout(f):
-                {NazwaTestu}({zmienne})
+                wynik = {NazwaTestu}({zmienne})
+                if wynik is not None: print(wynik)
             wynik = f.getvalue().strip()
 
-            self.assertEqual(wynik, {wynikWywolania})\n"""
+            self.assertEqual(wynik, {wynikWywolania}, msg=f"dla zmiennych: {zmienne}. Otrzymano: {{wynik}}, oczekiwano: {wynikWywolania}")\n"""
 
     def pobierz_parametry(self, test_index: int, param_count: int) -> str:
         """
