@@ -21,7 +21,7 @@ class Node:
 
 
 
-def Zadanie_200(p, q): ...
+def Zadanie_200(p, q)->bool: ...
 
 
 

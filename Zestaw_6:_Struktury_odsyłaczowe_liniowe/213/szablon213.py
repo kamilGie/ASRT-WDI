@@ -27,7 +27,7 @@ class Node:
 
 
 
-def repair(p): ...
+def repair(p)->int: ...
 
 
 

@@ -19,7 +19,7 @@ class Node:
 
 
 
-def reverse(head): ...
+def reverse(head)->Node: ...
 
 
 

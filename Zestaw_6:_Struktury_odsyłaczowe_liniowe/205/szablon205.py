@@ -16,19 +16,21 @@ class Node:
         return f"{self.val}" + (f" -> {self.next}" if self.next else "")
 
 
+
+
+
+
 def Zadanie_205(head, p, q) -> int: ...
+
+
+
+
 
 
 if __name__ == "__main__":
     from testy205 import odpal_testy
 
-    head = Node(
-        1,
-        Node(
-            -1,
-            Node(2, Node(-2, Node(3, Node(-3, Node(4, Node(-4, Node(5, Node(-5)))))))),
-        ),
-    )
+    head = Node( 1, Node( -1, Node(2, Node(-2, Node(3, Node(-3, Node(4, Node(-4, Node(5, Node(-5))))))))))
     p, q = Node(0), Node(0)
     print(Zadanie_205(head, p, q))
 

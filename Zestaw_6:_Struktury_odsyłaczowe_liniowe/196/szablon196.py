@@ -19,7 +19,7 @@ class Node:
 
 
 
-def Zadanie_196(head): ...
+def Zadanie_196(head)->bool: ...
 
 
 

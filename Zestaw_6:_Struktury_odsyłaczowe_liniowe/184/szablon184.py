@@ -20,7 +20,7 @@ class Node:
 
 
 
-def Zadanie_184(p, q): ...
+def Zadanie_184(p, q)->Node: ...
 
 
 

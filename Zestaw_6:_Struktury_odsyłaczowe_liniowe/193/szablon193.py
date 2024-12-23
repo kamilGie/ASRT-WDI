@@ -21,7 +21,7 @@ class Node:
 
 
 
-def Zadanie_193(head): ...
+def Zadanie_193(head)->int: ...
 
 
 
