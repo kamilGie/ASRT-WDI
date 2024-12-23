@@ -17,7 +17,7 @@ Wypełnij plik `szablon.py` i uruchom go, odkomentowując funkcję `odpal_testy(
 https://github.com/user-attachments/assets/ad6d166e-bda7-4eca-a8cc-86d984913e0f
 
 ### 🌐 Wizualizacje Rozwiązań
-Niektóre zadania zawierają wizualne wyjaśnienia algorytmów, które są hostowane w chmurze na stronie internetowej lub zrealizowane w Pygame, na przykład [Kolokwium 2022 A3](https://github.com/kamilGie/ASRT-WDI/tree/main/Kolokwia/Kolokwium_2/2022_A3), [160](https://github.com/kamilGie/ASRT-WDI/tree/main/Zestaw_5%3A_Rekurencja/160) czy [148](https://github.com/kamilGie/ASRT-WDI/tree/main/Zestaw_5%3A_Rekurencja/148) 
+Niektóre zadania zawierają wizualne wyjaśnienia algorytmów, które są hostowane w chmurze na stronie internetowej lub zrealizowane w Pygame, na przykład [Kolokwium 2022 A3](https://github.com/kamilGie/ASRT-WDI/tree/main/Kolokwia/Kolokwium_2/2022_A3), [160](https://github.com/kamilGie/ASRT-WDI/tree/main/Zestaw_5%3A_Rekurencja/160) czy [112](https://github.com/kamilGie/ASRT-WDI/tree/main/Zestaw_3%3A_Tablice_o_większej_liczbie_wymiarów/112) 
 
 
 ### 🌑 Czarny Motyw Zestawu
