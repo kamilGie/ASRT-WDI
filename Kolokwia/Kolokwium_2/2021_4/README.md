@@ -26,7 +26,7 @@ def Podciag_fibo(s):
     return 0
 
 
-def Zadanie_117(T):
+def Zadanie_4(T):
     n = len(T)
 
     # transpozycja T dla slicow kolumny
