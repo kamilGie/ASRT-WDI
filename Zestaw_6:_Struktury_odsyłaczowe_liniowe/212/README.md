@@ -9,7 +9,7 @@
 # argumenty liczy sie od p.next
 # tyle ze zmian jak bedzie jakies wieksza zmiana dodam ponizej zadanie 
 
-# 209
+# 211
 def repair(p):
     """bede tworzyl 2 lancuchy ktore potem zlacze"""
     odd_head = odd_tail = Node(0)
