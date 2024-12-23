@@ -33,3 +33,8 @@ def Zadanie_112(T):
     return wynik if wynik < inf else False
 
 ```
+# Opis Rozwiązania
+**interaktywny Algorytm** klikni aby uzyć:
+
+[![Kliknij tutaj](https://github.com/user-attachments/assets/294b95ab-84ce-439f-a1ab-7388accc6187)](https://gieras.pl/asrt/wdi/112)
+
