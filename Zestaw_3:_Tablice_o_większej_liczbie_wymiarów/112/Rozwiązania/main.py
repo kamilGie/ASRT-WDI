@@ -1,10 +1,12 @@
-<picture>
-  <source srcset="../../srt/zbior_zadan/112.png" media="(prefers-color-scheme: light)">
-  <source srcset="../../srt/zbior_zadan/black_112.png" media="(prefers-color-scheme: dark)">
-  <img src="../../srt/zbior_zadan/black_112.png" alt="zadanie 112">
-</picture>
+# ====================================================================================================>
+# Zadanie 112
+# Dana jest plansza o wymiarach NxN zawierająca wartości 0 i 1. Pola o wartości 1 zawierają
+# pułapki.Skoczek musi dotrzeć z górnego wiersza planszy do dolnego. Każdy ruch skoczka musi go przybliżać do dolnego wiersza.
+# Proszę napisać program, który zwraca długość najkrótszej bezpiecznej drogi skoczka z wiersza górnego do wiersza dolnego.
+# ====================================================================================================>
+# return dlugosci najkroszedj drogi  - jak sie da
+# return False - jak sie nie da
 
-```python
 from math import inf
 
 
@@ -31,5 +33,3 @@ def Zadanie_112(T):
     wynik = min(min_odległość[N - 1])
 
     return wynik if wynik < inf else False
-
-```
