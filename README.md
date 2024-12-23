@@ -56,7 +56,6 @@ Część rozwiązań została zaczerpnięta (*bezczelnie podkradziona*) z poniż
 Jestem ogromnie wdzięczny ich autorom za świetne prace, które bardzo pomogły! 
 
 - 🌟 [WDI-2023](https://github.com/pawlowiczf/WDI-2023) - [Filip Pawłowicz](https://github.com/pawlowiczf)
-- 🌟 [bit-algo-start-24-25-WDI](https://github.com/MarcinSerafin03/bit-algo-start-24-25-WDI) - [Marcin Serafin](https://github.com/MarcinSerafin03) ,[Ernest Szlamczyk](https://github.com/eszlamczyk) 
 - 🌟 [WDI2020](https://github.com/Wisien999/WDI2020) - [Wisien999](https://github.com/Wisien999)  
 
 
