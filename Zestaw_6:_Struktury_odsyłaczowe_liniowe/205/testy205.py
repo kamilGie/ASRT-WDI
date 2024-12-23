@@ -44,6 +44,27 @@ class testy(unittest.TestCase):
             self.assertEqual(wynik, '5', msg=f"dla zmiennych: Node(1, Node(-1, Node(2, Node(-2, Node(3, Node(-3, Node(4, Node(-4, Node(5, Node(-5)))))))))),Node(0),Node(0). Otrzymano: {wynik}, oczekiwano: '5'")
 
 
+    def test_Nr05_Zadanie_205_zwalnianie_pamieci(self):
+        head = Node(1, Node(-1, Node(2, Node(-2, Node(3, Node(-3, Node(4, Node(-4, Node(5, Node(-5))))))))))
+        q,r=Node(0),Node(0)
+        Zadanie_205(head,q,r)
+        self.assertTrue(not head or not head.next,msg="nie zwolniono pamieci dla head")
+
+    def test_Nr06_Zadanie_205_zapelnianie_p_q(self):
+        head = Node(1, Node(-1, Node(2, Node(-2, Node(3, Node(-3, Node(4, Node(-4, Node(5, Node(-5))))))))))
+        q,r=Node(0),Node(0)
+        f = io.StringIO()
+        with redirect_stdout(f):
+            Zadanie_205(head,q,r)
+            print(q)
+            print(r)
+        wynik = f.getvalue().strip()
+        self.assertTrue(
+        wynik == '2 -> 4\n-1 -> -3 -> -5' or wynik == '0 -> 2 -> 4\n0 -> -1 -> -3 -> -5',
+        msg=f"nie wypelniono poprawnie p lub q"
+    )
+
+
 def odpal_testy():
     suite = unittest.TestLoader().loadTestsFromTestCase(testy)
     unittest.TextTestRunner(verbosity=2,failfast=True).run(suite)
