@@ -24,7 +24,7 @@ def Zadanie_183(p):
     current = head = reverse_list(p)
     carry = 1
 
-    while current:
+    while current and carry:
         # sprawdzam czy przeszlo dzielac przez 10
         carry, current.val = divmod(current.val + carry, 10)
         current = current.next
