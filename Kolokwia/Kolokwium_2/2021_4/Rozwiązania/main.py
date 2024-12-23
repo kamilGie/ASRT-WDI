@@ -1,6 +1,13 @@
-![black_Zrzut ekranu 2024-12-3 o 23 21 10](https://github.com/user-attachments/assets/0138ebf3-c1f1-42fc-a4f1-94ccb5d4beaa)
+# ====================================================================================================>
+# Zadanie 4, 16 grudnia 2021
+# W tablicy o rozmiarze NxN wypełnionej liczbami naturalnymi umieszczono dokładnie jeden
+# fragment ciągu Fiboacciego o długości co najmniej 3 elementów. Ciąg ten może leżeć w tablicy pionowo lub
+# poziomo w kierunku rosnącym lub malejącym. Proszę napisać funkcje, która dla zadanej tablicy od szuka ten
+# fragment i zwróci jego długość.
+# ====================================================================================================>
 
-```python
+# rozwiazanie zaklada ze umieszczono `DOKLADNIE JEDEN` fragment
+
 
 def czy_podciag_fibo(n1, n2, n3):
     """sprawdzi czy 3 elementy sa nastepnymi elemetami ciagu fibo"""
@@ -51,23 +58,5 @@ def Zadanie_117(T):
         kolumna_odwrotnie = Podciag_fibo(transpozycja_T[i][::-1])
         if kolumna_odwrotnie > 2:
             return kolumna_odwrotnie
-```
-# Opis Rozwiązania
-
-Rozwiązanie zakłada, że w tablicy umieszczono *dokładnie jeden* fragment ciągu Fibonacciego.
-
-Jest to imo najprostsze podejście, jakie można zastosować.
-
-Możliwe jest jednak ulepszenie tego rozwiązania, na przykład poprzez dodanie dodatkowych warunków w funkcji `czy_podciag_fibo`.
-- operacje typu `n3 > n1`
-- [właściwości kwadratowe ciągu Fibonacciego](https://stackoverflow.com/questions/2432669/test-if-a-number-is-a-fibonacci-number):
-```math
-5n^2 + 4 \quad \text{lub} \quad 5n^2 - 4
-```
 
 
----
-
-Alternatywnie, można opracować bardziej optymalne podejście, które przekształca tablicę na indeksy ciągu Fibonacciego i sprawdza, czy któryś wiersz lub kolumna rośnie albo maleje.
-
-###  Jednak takie rozwiązanie nie byłoby tak przejrzyste i proste jak obecne.
