@@ -22,7 +22,7 @@ class Node:
 
 
 
-def Zadanie_203(p, q): ...
+def Zadanie_203(p, q)->int: ...
 
 
 

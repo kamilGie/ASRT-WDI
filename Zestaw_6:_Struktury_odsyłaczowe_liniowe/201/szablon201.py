@@ -22,11 +22,11 @@ class Node:
 
 
 
-def iteration(p, q): ...
+def iteration(p, q)->Node: ...
 
 
 
-def recursive(p, q): ...
+def recursive(p, q)->Node: ...
 
 
 

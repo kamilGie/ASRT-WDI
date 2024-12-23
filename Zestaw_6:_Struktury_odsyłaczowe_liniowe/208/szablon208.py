@@ -22,7 +22,7 @@ class Node:
 
 
 
-def Zadanie_208(p, k): ...
+def Zadanie_208(p, k)->bool: ...
 
 
 

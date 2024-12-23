@@ -21,7 +21,7 @@ class Node:
 
 
 
-def Zadanie_189(head): ...
+def Zadanie_189(head)->Node: ...
 
 
 

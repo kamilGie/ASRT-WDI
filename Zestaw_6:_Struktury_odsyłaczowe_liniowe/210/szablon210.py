@@ -27,7 +27,7 @@ class Node:
 
 
 
-def iloczyn(z1, z2, z3): ...
+def iloczyn(z1, z2, z3)->Node: ...
 
 
 
