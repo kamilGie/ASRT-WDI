@@ -9,6 +9,7 @@
 # return tablica T2
 
 
+
 def Zadanie_97(T1): ...
 
 

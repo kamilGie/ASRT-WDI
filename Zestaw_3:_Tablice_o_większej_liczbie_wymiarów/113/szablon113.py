@@ -13,8 +13,8 @@ def distance(T): ...
 
 
 if __name__ == "__main__":
-    from testy113 import odpal_testy
+    from szablon113 import odpal_testy
 
-    distance(int(input('Podaj T: ')))
+    distance(list(input("Podaj T: ")))
 
     # odpal_testy()

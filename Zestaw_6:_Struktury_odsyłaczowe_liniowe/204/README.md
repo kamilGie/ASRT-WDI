@@ -15,7 +15,7 @@ from math import inf
 
 
 def Zadanie_204(p, q):
-    # Wskaźnik z wartonikiem -inf by kazde elemetny q mniejsze od pierwszego p mogly sie wpisac przed -inf
+    # Wskaźnik z wartonikiem -inf by kazde elemetny q mniejsze od pierwszego p mogly sie wpisac po -inf
     head_p = Node(-inf, p)
     current_q = q
 

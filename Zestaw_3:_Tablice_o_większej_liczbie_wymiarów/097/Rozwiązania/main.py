@@ -1,10 +1,13 @@
-<picture>
-  <source srcset="../../srt/zbior_zadan/097.png" media="(prefers-color-scheme: light)">
-  <source srcset="../../srt/zbior_zadan/black_097.png" media="(prefers-color-scheme: dark)">
-  <img src="../../srt/zbior_zadan/black_097.png" alt="zadanie 097">
-</picture>
+# ====================================================================================================>
+# Zadanie 97
+# Dane są dwie tablice mogące pomieścić taką samą liczbę elementów: T1[N][N] i T2[M], gdzie
+# M=N*N. W każdym wierszu tablicy T1 znajdują się uporządkowane rosnąco (w obrębie wiersza) liczby
+# naturalne. Proszę napisać funkcję przepisującą wszystkie singletony (liczby występujące dokładnie raz) z
+# tablicy T1 do T2, tak aby liczby w tablicy T2 były uporządkowane rosnąco. Pozostałe elementy tablicy T2
+# powinny zawierać zera.
+# ====================================================================================================>
+# return tablica T2
 
-```python
 from math import inf
 
 
@@ -36,5 +39,3 @@ def Zadanie_97(T1):
     T2.extend([0] * (N * N - len(T2)))
 
     return T2
-
-```

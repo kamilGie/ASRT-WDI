@@ -17,7 +17,7 @@ Wypełnij plik `szablon.py` i uruchom go, odkomentowując funkcję `odpal_testy(
 https://github.com/user-attachments/assets/ad6d166e-bda7-4eca-a8cc-86d984913e0f
 
 ### 🌐 Wizualizacje Rozwiązań
-Niektóre zadania zawierają wizualne wyjaśnienia algorytmów, które są hostowane w chmurze na stronie internetowej lub zrealizowane w Pygame, na przykład [Kolokwium 2022 A3](https://github.com/kamilGie/ASRT-WDI/tree/main/Kolokwia/Kolokwium_2/2022_A3), [160](https://github.com/kamilGie/ASRT-WDI/tree/main/Zestaw_5%3A_Rekurencja/160) czy [148](https://github.com/kamilGie/ASRT-WDI/tree/main/Zestaw_5%3A_Rekurencja/148) 
+Niektóre zadania zawierają wizualne wyjaśnienia algorytmów, które są hostowane w chmurze na stronie internetowej lub zrealizowane w Pygame, na przykład [Kolokwium 2022 A3](https://github.com/kamilGie/ASRT-WDI/tree/main/Kolokwia/Kolokwium_2/2022_A3), [160](https://github.com/kamilGie/ASRT-WDI/tree/main/Zestaw_5%3A_Rekurencja/160) czy [112](https://github.com/kamilGie/ASRT-WDI/tree/main/Zestaw_3%3A_Tablice_o_większej_liczbie_wymiarów/112) 
 
 
 ### 🌑 Czarny Motyw Zestawu
@@ -56,7 +56,6 @@ Część rozwiązań została zaczerpnięta (*bezczelnie podkradziona*) z poniż
 Jestem ogromnie wdzięczny ich autorom za świetne prace, które bardzo pomogły! 
 
 - 🌟 [WDI-2023](https://github.com/pawlowiczf/WDI-2023) - [Filip Pawłowicz](https://github.com/pawlowiczf)
-- 🌟 [bit-algo-start-24-25-WDI](https://github.com/MarcinSerafin03/bit-algo-start-24-25-WDI) - [Marcin Serafin](https://github.com/MarcinSerafin03) ,[Ernest Szlamczyk](https://github.com/eszlamczyk) 
 - 🌟 [WDI2020](https://github.com/Wisien999/WDI2020) - [Wisien999](https://github.com/Wisien999)  
 
 
