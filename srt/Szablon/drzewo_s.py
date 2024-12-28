@@ -3,22 +3,24 @@ from _utils_S import parsuj_prototyp, main
 from inspect import signature
 
 
-def lista_przesylaczowa():
+def drzewo():
     return """
 
-class Node:
-    def __init__(self, val, next=None):
-        self.val = val
-        self.next = next
 
-    def __str__(self):  # wypisywanie
-        return f"{self.val}" + (f" -> {self.next}" if self.next else "")\n\n\n\n\n\n
+class Node:
+    def __init__(self, val, left=None, right=None):
+        self.val = val
+        self.right = right
+        self.left = left
+
+    def __str__(self) -> str:
+        return f"{str(self.left) + ' ' if self.left else ''}{self.val}{' ' + str(self.right) if self.right else ''}" \n\n\n\n\n\n
 """
 
 
-class przesylaczowe_s(input_main):
+class drzewo_s(input_main):
     def __str__(self) -> str:
-        res = parsuj_prototyp(self.linie_prototypu, self.funkcje, lista_przesylaczowa())
+        res = parsuj_prototyp(self.linie_prototypu, self.funkcje, drzewo())
 
         wywolania_funkcji = "\n"
         for funkcja in self.funkcje:
@@ -28,8 +30,8 @@ class przesylaczowe_s(input_main):
             for (
                 param_name
             ) in sig.parameters:  # Iterujesz po kluczach, które są nazwami parametrów
-                if param_name in {"p", "q", "head"}:
-                    input_lines.append(f"Node(1, Node(2, Node(3)))")
+                if param_name in {"p", "q", "head", "root"}:
+                    input_lines.append(f"Node(1, Node(2),Node(3))")
                 else:
                     input_lines.append(f"int(input('Podaj {param_name}: '))")
 

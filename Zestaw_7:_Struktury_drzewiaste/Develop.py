@@ -3,10 +3,10 @@ from typing import Callable, List
 
 def stworz_zadanie(
     funkcje: List[Callable],
-    testy="domyslne_t",
+    testy="drzewo_t",
     rozwiazanie="domyslne_r",
-    szablon="domyslne_s",
-    README="domyslne_rm",
+    szablon="drzewo_s",
+    README="drzewo_rm",
 ) -> None:
     """
     Tworzy folder z rozwiązaniem na podstawie przekazanych funkcji.
@@ -41,7 +41,13 @@ def stworz_zadanie(
     # w przyszlosci jak projekt przejdzie na pakiety nie bedzie takiego problemu
 
     stworz_zadanie(
-        sciezka_pliku_wykonalnego, nr_zadania, funkcje, szablon, rozwiazanie, testy,README
+        sciezka_pliku_wykonalnego,
+        nr_zadania,
+        funkcje,
+        szablon,
+        rozwiazanie,
+        testy,
+        README,
     )
 
 
