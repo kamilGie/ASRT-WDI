@@ -7,12 +7,16 @@
 # ====================================================================================================>
 
 
-def Zadanie_226(T): ...
+def Zadanie_226(T):
+    """Istnieją 3 różne klocki: (1, 2, 3, 4), (1, 2, 4, 3), (1, 3, 2, 4). Reszta to ich modyfikacje."""
 
+    def klucz(klocek):
+        j = klocek.index(2)
+        prev, next = klocek[(j - 1) % 4], klocek[(j + 1) % 4]
+        if {prev, next} == {1, 3}:  # Opcja 1
+            return 0
+        elif {prev, next} == {3, 4}:  # Opcja 3
+            return 2
+        return 1  # Opcja 2
 
-if __name__ == "__main__":
-    from testy226 import odpal_testy
-
-    Zadanie_226(list(input("Podaj T: ")))
-
-    # odpal_testy()
+    T.sort(key=klucz)
