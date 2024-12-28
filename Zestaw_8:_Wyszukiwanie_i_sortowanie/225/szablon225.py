@@ -5,11 +5,12 @@
 # ====================================================================================================>
 
 
-def Zadanie_225(): ...
+def Zadanie_225(T): ...
 
 
 if __name__ == "__main__":
-    from Develop import stworz_zadanie
+    from testy225 import odpal_testy
 
-    Zadanie_225()
-    # stworz_zadanie([Zadanie_225])
+    Zadanie_225([3, 0, 2, 0, 1])  # return [1,0,2,0,3]
+
+    # odpal_testy()
