@@ -127,3 +127,28 @@ class drzewo_t(prime):
                 print(wynik)
 
         return repr(f.getvalue().strip()), True
+
+    def pobierz_parametry(self, test_index: int, param_count: int) -> str:
+        """
+        Pobiera parametry testowe od użytkownika.
+
+        Args:
+            test_index (int): Indeks aktualnego testu.
+            param_count (int): Liczba argumentów, które mają być pobrane.
+
+        Returns:
+            Tuple: Krotka z parametrami podanymi przez użytkownika.
+        """
+        if param_count == 0:
+            return ""
+
+        koncowka_argumetnow = "" if 1 == param_count else "y"
+        wyjscie = ", lub 'stop' by zakonczyc testy" if test_index > 3 else ""
+        wejscie = input(
+            f"\nTest nr {test_index}\nPodaj {param_count} argument{koncowka_argumetnow} testowe{wyjscie}: "
+        )
+        print(f"\033[F\033[K\033[F\033[K\033[F\033[K", end="")
+        wejscie = self.transform_tree_syntax(wejscie)
+        print(wejscie)
+
+        return wejscie

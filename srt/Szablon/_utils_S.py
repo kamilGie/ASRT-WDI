@@ -1,6 +1,3 @@
-import os
-
-
 def podpowiedz():
     return """    # podpowiedz(1)
     # podpowiedz(2)
@@ -8,6 +5,21 @@ def podpowiedz():
 
 
 def przykladowe_odpalenie(funkcja):
+    class Node:
+        """lista dwukierunkowa, w zadaniach gdzie jest jednokierunkowa 2 kierunek"""
+
+        def __init__(self, val, next=None, prev=None):
+            self.val = val
+            self.next: Node | None = next
+            self.prev: Node | None = prev
+            if next:
+                next.prev = self
+            if prev:
+                prev.next = self
+
+        def __str__(self):  # wypisywanie
+            return f"{self.val}" + (f" -> {self.next}" if self.next else "")
+
     """
     Przygotowuje dynamiczne wywołanie funkcji i zwraca przykład wraz z wynikiem w formacie:
     funkcja(parametry z input) # return wynik
@@ -15,7 +27,10 @@ def przykladowe_odpalenie(funkcja):
     print()
     while True:
         try:
-            param_values = eval( input( "Podaj argumenty przykładowego wywołania, które pojawi się w szablonie: "))
+            parametry_uzytkonwika = input(
+                "Podaj argumenty przykładowego wywołania, które pojawi się w szablonie: "
+            )
+            param_values = eval(parametry_uzytkonwika)
             if not isinstance(param_values, tuple):
                 param_values = (param_values,)
 
@@ -23,7 +38,9 @@ def przykladowe_odpalenie(funkcja):
         except Exception as e:
             print(f"Błąd: {e}. Spróbuj ponownie.")
             continue
-        example_with_result = f"    {funkcja.__name__}({', '.join(map(str, param_values))})  # return {result}"
+        example_with_result = (
+            f"    {funkcja.__name__}({parametry_uzytkonwika})  # return {result}"
+        )
         print(f"\nPrzykład z wynikiem: {example_with_result}")
         break
 

@@ -2,6 +2,22 @@ from main_s import main_s
 from _utils_S import parsuj_prototyp, main, podpowiedz, przykladowe_odpalenie
 
 
+class Node:
+    """lista dwukierunkowa, w zadaniach gdzie jest jednokierunkowa 2 kierunek"""
+
+    def __init__(self, val, next=None, prev=None):
+        self.val = val
+        self.next: Node | None = next
+        self.prev: Node | None = prev
+        if next:
+            next.prev = self
+        if prev:
+            prev.next = self
+
+    def __str__(self):  # wypisywanie
+        return f"{self.val}" + (f" -> {self.next}" if self.next else "")
+
+
 def lista_przesylaczowa():
     return """\n
 class Node:

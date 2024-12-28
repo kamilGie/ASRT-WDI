@@ -131,7 +131,7 @@ class prime(Bazowa):
                 if wynik is not None: print(wynik)
             wynik = f.getvalue().strip()
 
-            self.assertEqual(wynik, {wynikWywolania}, msg=f"dla zmiennych: {zmienne}. Otrzymano: {{wynik}}, oczekiwano: {wynikWywolania}")\n"""
+            self.assertEqual(wynik, {wynikWywolania}, msg=f\"\"\"dla zmiennych: {zmienne}. Otrzymano: {{wynik}}, oczekiwano: {wynikWywolania} \"\"\")\n"""
 
     def pobierz_parametry(self, test_index: int, param_count: int) -> str:
         """
