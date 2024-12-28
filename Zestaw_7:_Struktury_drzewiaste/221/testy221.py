@@ -35,27 +35,27 @@ def komenda(k: str, *args, **kwargs):
 
 
 class testy(unittest.TestCase):
-    def test_Nr01_zbuduj_drzewo_morse(self):
+    def test_Nr001_zbuduj_drzewo_morse(self):
         p = zbuduj_drzewo_morse()
         self.assertEqual(p.left.left.val, "I")
 
-    def test_Nr02_zbuduj_drzewo_morse(self):
+    def test_Nr002_zbuduj_drzewo_morse(self):
         p = zbuduj_drzewo_morse()
         self.assertEqual(p.left.left.left.left.val, "H")
 
-    def test_Nr03_zbuduj_drzewo_morse(self):
+    def test_Nr003_zbuduj_drzewo_morse(self):
         p = zbuduj_drzewo_morse()
         self.assertEqual(p.left.right.left.val, "R")
 
-    def test_Nr04_zbuduj_drzewo_morse(self):
+    def test_Nr004_zbuduj_drzewo_morse(self):
         p = zbuduj_drzewo_morse()
         self.assertEqual(p.left.right.right.val, "W")
 
-    def test_Nr05_zbuduj_drzewo_morse(self):
+    def test_Nr005_zbuduj_drzewo_morse(self):
         p = zbuduj_drzewo_morse()
         self.assertEqual(p.left.right.right.left.val, "P")
 
-    def test_Nr06_zbuduj_drzewo_morse(self):
+    def test_Nr006_zbuduj_drzewo_morse(self):
         p = zbuduj_drzewo_morse()
         self.assertEqual(p.left.left.left.left.left.val, "5")
 
