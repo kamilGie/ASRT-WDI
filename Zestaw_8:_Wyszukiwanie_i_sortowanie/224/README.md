@@ -28,3 +28,20 @@ def Zadanie_224(T, target):
 
     return -1  # Element nie został znaleziony
 ```
+
+# Opis Rozwiązania 
+
+### Wnioski z porównania wyszukiwania tercyjnego i binarnego
+
+1. **Złożoność czasowa**:
+```math
+\text{Wyszukiwanie tercyjne: } O(\log_3 n) \approx \frac{\log_2 n}{\log_2 3}
+
+```
+```math
+\text{Wyszukiwanie binarne: } O(\log_2 n)
+```
+
+2. **Liczba porównań**: Wyszukiwanie tercyjne wymaga więcej porównań w każdej iteracji niż binarne, co zwiększa jego czas wykonania.
+
+3. **Efektywność praktyczna**: Wyszukiwanie binarne jest szybsze w praktyce, ponieważ podział na dwie części a nie na trzy.
