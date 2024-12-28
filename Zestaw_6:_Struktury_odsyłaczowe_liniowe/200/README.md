@@ -5,21 +5,30 @@
 </picture>
 
 ```python
+# Zawieranie wartościowe
 class Node:
     def __init__(self, val, next=None):
         self.val = val
         self.next = next
 
 
-def contain(p, element):
+def are_subsequences_equal(node1, sublist):
+    while node1 and sublist: # Póki jedno sie nie skończy
+        if node1.val != sublist.val: # Różnią się
+            return False
+        node1 = node1.next
+        sublist = sublist.next
+    return sublist is None  # Jeśli sublist się skończy, to była podlistą.
+
+
+def contains_sublist(p, sublist):
     while p:
-        if p == element:
+        if are_subsequences_equal(p, sublist):  # Czy sublist zaczyna się w p
             return True
         p = p.next
     return False
 
 
 def Zadanie_200(p, q):
-    """Aby sie zawieral jeden w drugim to jeden musi wskazywac na poczatek pierwszego"""
-    return contain(p, q) or contain(q, p)
+    return contains_sublist(p, q) or contains_sublist(q, p)
 ```

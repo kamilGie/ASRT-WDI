@@ -3,10 +3,6 @@ from _utils_S import parsuj_prototyp, main
 from inspect import signature
 
 
-class Node:
-    pass
-
-
 def lista_przesylaczowa():
     return """
 

@@ -3,7 +3,7 @@
 # Proszę napisać funkcję, która sprawdza czy jedna lista zawiera się w drugiej. Do funkcji
 # należy przekazać wskazania na pierwsze elementy obu list, funkcja powinna zwrócić wartość logiczną.
 # ====================================================================================================>
-# zawieranie dosłowne nie wartościowe
+# zawieranie wartościowe
 
 
 class Node:
@@ -21,7 +21,7 @@ class Node:
 
 
 
-def Zadanie_200(p, q): ...
+def Zadanie_200(p, q)->bool: ...
 
 
 

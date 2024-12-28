@@ -20,7 +20,7 @@ class Node:
 
 
 
-def Zadanie_198(head): ...
+def Zadanie_198(head)->int: ...
 
 
 

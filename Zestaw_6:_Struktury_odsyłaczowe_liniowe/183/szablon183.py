@@ -3,7 +3,7 @@
 # Dana jest nie pusta lista reprezentująca liczbę naturalną. Kolejnee lementy listy przechowują
 # kolejne cyfry. Proszę napisać funkcję zwiększającą taką liczbę o 1.
 # ====================================================================================================>
-
+# 1 -> 2 ->3 symbolizuje 123
 
 class Node:
     def __init__(self, val, next=None):
@@ -20,7 +20,7 @@ class Node:
 
 
 
-def Zadanie_183(p): ...
+def Zadanie_183(p)->Node: ...
 
 
 

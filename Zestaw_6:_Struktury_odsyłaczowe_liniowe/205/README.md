@@ -14,14 +14,18 @@ class Node:
 def Zadanie_205(head, p, q) -> int:
     deleted_cnt = 0
     while head:
-        if head.val > 0 and head.val % 2 == 0:
-            p = Node(head.val, p)
-        elif head.val < 0 and head.val % 2 == 1:
-            q = Node(head.val, q)
-        else:
+        next_node = head.next
+        head.next = None # odlaczenie
+        if head.val > 0 and head.val % 2 == 0:  # przypisanie p
+            p.next = head
+            p = p.next
+        elif head.val < 0 and head.val % 2 == 1:  # przypisanie q
+            q.next = head
+            q = q.next
+        else:  # usuwanie z pamieci
             deleted_cnt += 1
 
-        head = head.next
+        head = next_node
 
     return deleted_cnt
 ```

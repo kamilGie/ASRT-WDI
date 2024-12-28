@@ -20,7 +20,7 @@ class Node:
 
 
 
-def cycle_length(head): ...
+def cycle_length(head)->int: ...
 
 
 

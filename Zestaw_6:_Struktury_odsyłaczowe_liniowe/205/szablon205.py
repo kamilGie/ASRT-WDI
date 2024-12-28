@@ -20,8 +20,6 @@ class Node:
 
 
 
-
-
 def Zadanie_205(head, p, q) -> int: ...
 
 
@@ -32,8 +30,8 @@ def Zadanie_205(head, p, q) -> int: ...
 if __name__ == "__main__":
     from testy205 import odpal_testy
 
+    head = Node( 1, Node( -1, Node(2, Node(-2, Node(3, Node(-3, Node(4, Node(-4, Node(5, Node(-5))))))))))
+    p, q = Node(0), Node(0)
+    print(Zadanie_205(head, p, q))
 
-    Zadanie_205(Node(1, Node(2, Node(3))), Node(1, Node(2, Node(3))), Node(1, Node(2, Node(3))))
-
-
-    # odpal_testy()
+    odpal_testy()

@@ -5,43 +5,36 @@
 </picture>
 
 ```python
-# https://github.com/MarcinSerafin03/bit-algo-start-24-25-WDI/tree/main
+from math import inf
 
 
 def Zadanie_112(T):
     N = len(T)
-    skoki = [(1, -2), (2, -1), (2, 1), (1, 2)]
+    skoki = [(1, -2), (2, -1), (2, 1), (1, 2)]  # Skoki przybliżające do dolnego wiersza
 
-    min_odległość = [[float("inf") if i > 0 else 0 for _ in range(N)] for i in range(N)]
+    # Inicjalizacja tablicy odległości
+    min_odległość = [[inf] * N for _ in range(N)]
+    min_odległość[0] = [0] * N  # Pierwszy wiersz jest początkowo dostępny
 
-    for y in range(N - 1):  # koordynaty
+    # Iteracja przez wiersze tablicy
+    for y in range(N - 1):
         for x in range(N):
-            for skok in skoki:
-                potencjalny_skok_y = y + skok[0]  # ładen nazwy
-                potencjalny_skok_x = x + skok[1]
-                # sprawdzenie czy potencjalny skok nie wyjdzie nam poza tablice
-                if (
-                    potencjalny_skok_y < 0
-                    or potencjalny_skok_y > N - 1
-                    or potencjalny_skok_x < 0
-                    or potencjalny_skok_x > N - 1
-                ):
-                    continue
-                # sprawdzanie czy możemy w ogóle skoczyć z tego pola (czy byliśmy wcześniej już)
-                if min_odległość[y][x] == float("inf"):
-                    continue
-                # sprawdzenie czy nie ma miny
-                if T[potencjalny_skok_y][potencjalny_skok_x] == 1:
-                    continue
-                min_odległość[potencjalny_skok_y][potencjalny_skok_x] = min(
-                    min_odległość[y][x] + 1,
-                    min_odległość[potencjalny_skok_y][potencjalny_skok_x],
-                )
+            if min_odległość[y][x] == inf:
+                continue  # Pole niedostępne, pomijamy
 
-    result = float("inf")
-    for i in range(N):
-        result = min(min_odległość[N - 1][i], result)
+            for dy, dx in skoki:
+                ny, nx = y + dy, x + dx
+                if 0 <= ny < N and 0 <= nx < N and T[ny][nx] == 0:  # Sprawdzamy zakres i brak pułapki
+                    min_odległość[ny][nx] = min(min_odległość[ny][nx], min_odległość[y][x] + 1)
 
-    return result if result < float("inf") else False
+    # Znalezienie minimalnej odległości do dolnego wiersza
+    wynik = min(min_odległość[N - 1])
+
+    return wynik if wynik < inf else False
 
 ```
+# Opis Rozwiązania
+**interaktywny Algorytm** klikni aby uzyć:
+
+[![Kliknij tutaj](https://github.com/user-attachments/assets/294b95ab-84ce-439f-a1ab-7388accc6187)](https://gieras.pl/asrt/wdi/112)
+

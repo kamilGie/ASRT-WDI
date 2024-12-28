@@ -1,51 +1,73 @@
-
 ![black_Zrzut ekranu 2024-12-3 o 23 21 10](https://github.com/user-attachments/assets/0138ebf3-c1f1-42fc-a4f1-94ccb5d4beaa)
 
 ```python
-# https://github.com/MarcinSerafin03/bit-algo-start-24-25-WDI/tree/main
+
+def czy_podciag_fibo(n1, n2, n3):
+    """sprawdzi czy 3 elementy sa nastepnymi elemetami ciagu fibo"""
+    a, b = 1, 0
+    while n3 > a + b:
+        a, b = a + b, a
+
+    return n1 == b and n2 == a and n3 == a + b
 
 
-def fibo(T):
-    a, b = 1, 1
-    while a < T[0] or b < T[1]:
-        a, b = b, a + b
-    if a != T[0]:
-        return False
+def Podciag_fibo(s):
+    """zwraca dlugosci podciagu fibo jesli jest dluzszy niz 2"""
+    n = len(s)
+    for i in range(n - 2):
+        if czy_podciag_fibo(s[i], s[i + 1], s[i + 2]):
+            res = 3
+            for j in range(i + 1, n - 2):
+                if s[j] + s[j + 1] != s[j + 2]:
+                    break
+                res += 1
 
-    for i in range(1, len(T)):
-        a, b = b, a + b
-        if a != T[i]:
-            return False
-    return True
+            return res
+    return 0
 
 
 def Zadanie_4(T):
-    maxi = 0
-    for i in range(len(T)):
-        for j in range(len(T[i]) - 2):
-            if fibo(T[i][j : j + 3]):
-                curr = 3
-                a, b = T[i][j + 1], T[i][j + 2]
-                for k in range(j + 3, len(T[i]) - 2):
-                    if a + b == T[i][j + 3]:
-                        curr += 1
-                    else:
-                        maxi = max(curr, maxi)
-                maxi = max(curr, maxi)
-    for j in range(len(T[0])):
-        for i in range(len(T) - 2):
-            column_slice = [T[i][j], T[i + 1][j], T[i + 2][j]]
-            if fibo(column_slice):
-                curr = 3
-                a, b = T[i + 1][j], T[i + 2][j]
-                for k in range(i + 3, len(T)):
-                    if a + b == T[k][j]:
-                        curr += 1
-                        a, b = b, a + b
-                    else:
-                        break
-                maxi = max(curr, maxi)
+    n = len(T)
 
-    return maxi
+    # transpozycja T dla slicow kolumny
+    transpozycja_T = [[0] * n for _ in range(n)]
+    for i in range(n):
+        for j in range(n):
+            transpozycja_T[j][i] = T[i][j]
 
+    for i in range(n):
+        wiersz = Podciag_fibo(T[i])
+        if wiersz > 2:
+            return wiersz
+
+        wiersz_odwrotnie = Podciag_fibo(T[i][::-1])
+        if wiersz_odwrotnie > 2:
+            return wiersz_odwrotnie
+
+        kolumna = Podciag_fibo(transpozycja_T[i])
+        if kolumna > 2:
+            return kolumna
+
+        kolumna_odwrotnie = Podciag_fibo(transpozycja_T[i][::-1])
+        if kolumna_odwrotnie > 2:
+            return kolumna_odwrotnie
 ```
+# Opis Rozwiązania
+
+Rozwiązanie zakłada, że w tablicy umieszczono *dokładnie jeden* fragment ciągu Fibonacciego.
+
+Jest to imo najprostsze podejście, jakie można zastosować.
+
+Możliwe jest jednak ulepszenie tego rozwiązania, na przykład poprzez dodanie dodatkowych warunków w funkcji `czy_podciag_fibo`.
+- operacje typu `n3 > n1`
+- [właściwości kwadratowe ciągu Fibonacciego](https://stackoverflow.com/questions/2432669/test-if-a-number-is-a-fibonacci-number):
+```math
+5n^2 + 4 \quad \text{lub} \quad 5n^2 - 4
+```
+
+
+---
+
+Alternatywnie, można opracować bardziej optymalne podejście, które przekształca tablicę na indeksy ciągu Fibonacciego i sprawdza, czy któryś wiersz lub kolumna rośnie albo maleje.
+
+###  Jednak takie rozwiązanie nie byłoby tak przejrzyste i proste jak obecne.
