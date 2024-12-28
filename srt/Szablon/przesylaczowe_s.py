@@ -1,11 +1,9 @@
-from input_main import input_main
-from _utils_S import parsuj_prototyp, main
-from inspect import signature
+from main_s import main_s
+from _utils_S import parsuj_prototyp, main, podpowiedz, przykladowe_odpalenie
 
 
 def lista_przesylaczowa():
-    return """
-
+    return """\n
 class Node:
     def __init__(self, val, next=None):
         self.val = val
@@ -16,28 +14,14 @@ class Node:
 """
 
 
-class przesylaczowe_s(input_main):
+class przesylaczowe_s(main_s):
     def __str__(self) -> str:
         res = parsuj_prototyp(self.linie_prototypu, self.funkcje, lista_przesylaczowa())
 
-        wywolania_funkcji = "\n"
+        cialo_maina = "\n"
         for funkcja in self.funkcje:
-            sig = signature(funkcja)
-
-            input_lines = []
-            for (
-                param_name
-            ) in sig.parameters:  # Iterujesz po kluczach, które są nazwami parametrów
-                if param_name in {"p", "q", "head"}:
-                    input_lines.append(f"Node(1, Node(2, Node(3)))")
-                else:
-                    input_lines.append(f"int(input('Podaj {param_name}: '))")
-
-            wywolania_funkcji += (
-                f"\n    {funkcja.__name__}({', '.join(input_lines)})\n\n"
-            )
-
-        res += "\n\n\n\n"
-        res += main(self.nr_zadania, wywolania_funkcji)
-
+            cialo_maina += przykladowe_odpalenie(funkcja)
+        cialo_maina += "\n\n"
+        cialo_maina += podpowiedz()
+        res += main(self.nr_zadania, cialo_maina)
         return res

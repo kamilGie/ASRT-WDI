@@ -11,6 +11,7 @@ from _utils_T import (
     ODPAL_TESTY,
     dynamiczny_import_funkcji,
     RAMKA,
+    stworz_podpowiedzi,
 )
 
 
@@ -26,17 +27,20 @@ class prime(Bazowa):
         self.res += "\n"
         self.res += dynamiczny_import_funkcji(self.nr_zadania, self.funkcje)
         self.res += "\n\n"
-        self.res += ODPAL_TESTY
-        self.res += "\n"
-        self.res += KOMENDA
-        self.res += "\n\n"
         self.res += NAGLOWEK
         self.res += "\n"
 
         for funkcja in self.funkcje:
             self.generuj_testy_dla_funkcji(funkcja)
 
+        self.res += ODPAL_TESTY
+        self.res += "\n\n"
+        self.res += stworz_podpowiedzi()
+        self.res += "\n"
+        self.res += KOMENDA
+        self.res += "\n\n"
         self.finalizuj_testy()
+
         return self.res
 
     def generuj_testy_dla_funkcji(self, funkcja: Callable):
@@ -182,6 +186,7 @@ class prime(Bazowa):
         Finalizuje proces generacji testów, wyświetla podsumowanie oraz zapisuje
         wyniki do atrybutu `res`.
         """
+        print("\n")
         print(RAMKA, end="")
         print(f"🥳 Testy dla zadania {self.nr_zadania} zostały pomyślnie wygenerowane!")
         print(RAMKA)

@@ -1,15 +1,33 @@
-import inspect
+import os
 
 
-def funkcja_input(funkcja):
+def podpowiedz():
+    return """    # podpowiedz(1)
+    # podpowiedz(2)
+    # podpowiedz(3)\n"""
+
+
+def przykladowe_odpalenie(funkcja):
     """
-    Zwraca string reprezentujący wywołanie zadanej funkcji `funkcja`,
-    gdzie każdy parametr jest dynamicznie pobierany od użytkownika za pomocą `input`.
-    Wynikiem jest wywołanie np. 'mojafunkcja(input('Podaj parametr1: '), input('Podaj parametr2: '))'.
+    Przygotowuje dynamiczne wywołanie funkcji i zwraca przykład wraz z wynikiem w formacie:
+    funkcja(parametry z input) # return wynik
     """
-    parameters = inspect.signature(funkcja).parameters
-    input_lines = [f"int(input('Podaj {name}: '))" for name in parameters.keys()]
-    return f"    {funkcja.__name__}({', '.join(input_lines)})\n"
+    print()
+    while True:
+        try:
+            param_values = eval( input( "Podaj argumenty przykładowego wywołania, które pojawi się w szablonie: "))
+            if not isinstance(param_values, tuple):
+                param_values = (param_values,)
+
+            result = funkcja(*param_values)
+        except Exception as e:
+            print(f"Błąd: {e}. Spróbuj ponownie.")
+            continue
+        example_with_result = f"    {funkcja.__name__}({', '.join(map(str, param_values))})  # return {result}"
+        print(f"\nPrzykład z wynikiem: {example_with_result}")
+        break
+
+    return example_with_result
 
 
 def parsuj_prototyp(linie_prototypu, funkcje, naglokowa_funkcja=""):
@@ -34,20 +52,13 @@ def parsuj_prototyp(linie_prototypu, funkcje, naglokowa_funkcja=""):
     return res
 
 
-def lista_przesylaczowa():
-    return """class Node:
-    def __init__(self, val):
-        self.val = val
-        self.next: Node | None = None"""
-
-
 def main(nr_zadania, cialo_maina="\n\n"):
     """
     Generuje blok `main`. Pozwala na dodanie niestandardowego
     kodu `cialo_maina`, jeśli środek bloku `main` wymaga specyficznych operacji.
     """
     res = '\nif __name__ == "__main__":\n'
-    res += f"    from testy{nr_zadania} import odpal_testy\n"
+    res += f"    from testy{nr_zadania} import odpal_testy, podpowiedz\n"
     res += cialo_maina
     res += f"\n    # odpal_testy()\n"
     return res

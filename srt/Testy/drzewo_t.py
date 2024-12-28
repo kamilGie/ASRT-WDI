@@ -10,6 +10,7 @@ from _utils_T import (
     NAGLOWEK,
     ODPAL_TESTY,
     dynamiczny_import_funkcji,
+    stworz_podpowiedzi,
     RAMKA,
 )
 
@@ -85,11 +86,13 @@ class drzewo_t(prime):
         for funkcja in self.funkcje:
             self.generuj_testy_dla_funkcji(funkcja)
 
-        self.finalizuj_testy()
+        self.res += stworz_podpowiedzi()
+        self.res += "\n"
         self.res += ODPAL_TESTY
         self.res += "\n"
         self.res += KOMENDA
         self.res += "\n"
+        self.finalizuj_testy()
         return self.res
 
     def transform_tree_syntax(self, input_string: str) -> str:
@@ -124,28 +127,3 @@ class drzewo_t(prime):
                 print(wynik)
 
         return repr(f.getvalue().strip()), True
-
-    def pobierz_parametry(self, test_index: int, param_count: int) -> str:
-        """
-        Pobiera parametry testowe od użytkownika.
-
-        Args:
-            test_index (int): Indeks aktualnego testu.
-            param_count (int): Liczba argumentów, które mają być pobrane.
-
-        Returns:
-            Tuple: Krotka z parametrami podanymi przez użytkownika.
-        """
-        if param_count == 0:
-            return ""
-
-        koncowka_argumetnow = "" if 1 == param_count else "y"
-        wyjscie = ", lub 'stop' by zakonczyc testy" if test_index > 3 else ""
-        wejscie = input(
-            f"\nTest nr {test_index}\nPodaj {param_count} argument{koncowka_argumetnow} testowe{wyjscie}: "
-        )
-        print(f"\033[F\033[K\033[F\033[K\033[F\033[K", end="")
-        wejscie = self.transform_tree_syntax(wejscie)
-        print(wejscie)
-
-        return wejscie
