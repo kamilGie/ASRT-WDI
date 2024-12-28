@@ -1,10 +1,11 @@
 <picture>
-  <source srcset="../../srt/zbior_zadan/219.png" media="(prefers-color-scheme: light)">
-  <source srcset="../../srt/zbior_zadan/black_219.png" media="(prefers-color-scheme: dark)">
-  <img src="../../srt/zbior_zadan/black_219.png" alt="zadanie 219">
+  <source srcset="../../srt/zbior_zadan/220.png" media="(prefers-color-scheme: light)">
+  <source srcset="../../srt/zbior_zadan/black_220.png" media="(prefers-color-scheme: dark)">
+  <img src="../../srt/zbior_zadan/black_220.png" alt="zadanie 220">
 </picture>
 
 ```python
+# to samo co 219
 class Node:
     def __init__(self, val, left=None, right=None):
         self.val = val
@@ -12,7 +13,7 @@ class Node:
         self.left = left
 
 
-def Zadanie_219(p, val=1):
+def Zadanie_220(p, val=1):
     if not p:  # Pusty węzeł
         return val
 
