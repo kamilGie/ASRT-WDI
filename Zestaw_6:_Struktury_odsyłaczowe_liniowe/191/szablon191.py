@@ -19,7 +19,16 @@ class Node:
         return f"{self.val}" + (f" -> {self.next}" if self.next else "")
 
 
+
+
+
+
 def Zadanie_191(head): ...
+
+
+
+
+
 
 
 if __name__ == "__main__":
