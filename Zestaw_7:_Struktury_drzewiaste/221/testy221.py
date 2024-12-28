@@ -1,6 +1,6 @@
 import unittest
 
-from szablon221 import dekoduj_morse
+from szablon221 import dekoduj_morse, zbuduj_drzewo_morse
 
 
 def odpal_testy():
@@ -35,6 +35,29 @@ def komenda(k: str, *args, **kwargs):
 
 
 class testy(unittest.TestCase):
+    def test_Nr01_zbuduj_drzewo_morse(self):
+        p = zbuduj_drzewo_morse()
+        self.assertEqual(p.left.left.val, "I")
+
+    def test_Nr02_zbuduj_drzewo_morse(self):
+        p = zbuduj_drzewo_morse()
+        self.assertEqual(p.left.left.left.left.val, "H")
+
+    def test_Nr03_zbuduj_drzewo_morse(self):
+        p = zbuduj_drzewo_morse()
+        self.assertEqual(p.left.right.left.val, "R")
+
+    def test_Nr04_zbuduj_drzewo_morse(self):
+        p = zbuduj_drzewo_morse()
+        self.assertEqual(p.left.right.right.val, "W")
+
+    def test_Nr05_zbuduj_drzewo_morse(self):
+        p = zbuduj_drzewo_morse()
+        self.assertEqual(p.left.right.right.left.val, "P")
+
+    def test_Nr06_zbuduj_drzewo_morse(self):
+        p = zbuduj_drzewo_morse()
+        self.assertEqual(p.left.left.left.left.left.val, "5")
 
     def test_Nr02_dekoduj_morse(self):
         self.assertEqual(dekoduj_morse(".--- .- -.-"), "JAK")
@@ -82,7 +105,9 @@ class testy(unittest.TestCase):
         self.assertEqual(dekoduj_morse(" --.. "), "Z")
 
     def test_Nr17_dekoduj_morse(self):
-        self.assertEqual( dekoduj_morse("-.. --.. .. . .-- -.-. --.. -.-- -. .- "), "DZIEWCZYNA")
+        self.assertEqual(
+            dekoduj_morse("-.. --.. .. . .-- -.-. --.. -.-- -. .- "), "DZIEWCZYNA"
+        )
 
     def test_Nr18_dekoduj_morse(self):
         self.assertEqual(dekoduj_morse(".- -- --- -. .-. .-"), "AMONRA")
@@ -97,7 +122,9 @@ class testy(unittest.TestCase):
         self.assertEqual(dekoduj_morse("--.."), "Z")
 
     def test_Nr22_dekoduj_morse(self):
-        self.assertEqual( dekoduj_morse("-.. --.. .. . .-- -.-. --.. -.-- -. .-"), "DZIEWCZYNA")
+        self.assertEqual(
+            dekoduj_morse("-.. --.. .. . .-- -.-. --.. -.-- -. .-"), "DZIEWCZYNA"
+        )
 
     def test_Nr23_dekoduj_morse(self):
         self.assertEqual(dekoduj_morse(" .--"), "W")
@@ -160,7 +187,9 @@ class testy(unittest.TestCase):
         self.assertEqual(dekoduj_morse(" --.. "), "Z")
 
     def test_Nr43_dekoduj_morse(self):
-        self.assertEqual( dekoduj_morse("-.. --.. .. . .-- -.-. --.. -.-- -. .-"), "DZIEWCZYNA")
+        self.assertEqual(
+            dekoduj_morse("-.. --.. .. . .-- -.-. --.. -.-- -. .-"), "DZIEWCZYNA"
+        )
 
     def test_Nr44_dekoduj_morse(self):
         self.assertEqual(dekoduj_morse(".."), "I")
@@ -178,7 +207,9 @@ class testy(unittest.TestCase):
         self.assertEqual(dekoduj_morse("-.- --- .-.. . --. .- -- .."), "KOLEGAMI")
 
     def test_Nr49_dekoduj_morse(self):
-        self.assertEqual( dekoduj_morse(".--. --- -.. -.-. .... --- -.. --.. .. "), "PODCHODZI")
+        self.assertEqual(
+            dekoduj_morse(".--. --- -.. -.-. .... --- -.. --.. .. "), "PODCHODZI"
+        )
 
     def test_Nr50_dekoduj_morse(self):
         self.assertEqual(dekoduj_morse("--. --- ... -.-. "), "GOSC")
@@ -211,7 +242,9 @@ class testy(unittest.TestCase):
         self.assertEqual(dekoduj_morse(".--"), "W")
 
     def test_Nr60_dekoduj_morse(self):
-        self.assertEqual( dekoduj_morse("-.- --- ... --.. ..- .-.. . -.-. -.-. . "), "KOSZULECCE")
+        self.assertEqual(
+            dekoduj_morse("-.- --- ... --.. ..- .-.. . -.-. -.-. . "), "KOSZULECCE"
+        )
 
     def test_Nr61_dekoduj_morse(self):
         self.assertEqual(dekoduj_morse("- . -."), "TEN")
@@ -346,7 +379,9 @@ class testy(unittest.TestCase):
         self.assertEqual(dekoduj_morse("-. .. ."), "NIE")
 
     def test_Nr105_dekoduj_morse(self):
-        self.assertEqual( dekoduj_morse("... --.. .- -. ..- .--- . ... --.. "), "SZANUJESZ")
+        self.assertEqual(
+            dekoduj_morse("... --.. .- -. ..- .--- . ... --.. "), "SZANUJESZ"
+        )
 
     def test_Nr106_dekoduj_morse(self):
         self.assertEqual(dekoduj_morse("- .- -.- .. . "), "TAKIE")

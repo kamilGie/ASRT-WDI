@@ -26,6 +26,6 @@ def dekoduj_morse(kod) -> str: ...
 if __name__ == "__main__":
     from testy221 import odpal_testy
 
-    dekoduj_morse("... --- ...")  # return SOS
+    # dekoduj_morse("... --- ...")  # return SOS
 
-    # odpal_testy()
+    odpal_testy()
