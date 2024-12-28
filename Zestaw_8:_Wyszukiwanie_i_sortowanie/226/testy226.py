@@ -34,7 +34,7 @@ def komenda(k: str, *args, **kwargs):
 
 
 class testy(unittest.TestCase):
-
+   """ testy do tego sa bardzo skromne bo jest wiele poprawnych rozwiazań """
     def test_Nr01_Zadanie_226(self):
             tablica = [(2, 3, 1, 4), (3, 2, 4, 1), (1, 2, 3, 4), (1, 3, 4, 2)]
             Zadanie_226(tablica)
