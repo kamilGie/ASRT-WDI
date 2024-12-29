@@ -9,7 +9,7 @@ def Zadanie_226(T):
     """Istnieją 3 różne klocki: (1, 2, 3, 4), (1, 2, 4, 3), (1, 3, 2, 4). Reszta to ich modyfikacje."""
     i, end = 0, len(T) - 1
     while i <= end:  # Przenoszę opcję 1 na początek, opcję 2 na koniec, a opcję 3 zostawiam na miejscu
-        for j in range(4): # szukam indekus koloru 2
+        for j in range(4): # szukam indeksu koloru 2
             if T[i][j] ==2:
                 prev, next = T[i][(j - 1) % 4], T[i][(j + 1) % 4]  # Sąsiedzi koloru 2
                 if {prev, next} == {1, 3}:  # Opcja 1: Na początek
