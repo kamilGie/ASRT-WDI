@@ -6,7 +6,7 @@
 
 
 
-Jeśli ktoś zna prostsze rozwiązanie, proszę pisać na [pv](gieras.pl).
+Jeśli ktoś zna prostsze rozwiązanie, proszę pisać na [pv](https://gieras.pl/).
 
 
 ```python
