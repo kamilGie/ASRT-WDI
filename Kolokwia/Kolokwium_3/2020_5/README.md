@@ -38,6 +38,6 @@ def rek(t, i, n1, n2, n3, last_i, counter):
     return counter
 
 
-def Zadanie_5(T):
+def trojki(T):
     return rek(T, 0, 0, 0, 0, -1, 0)
 ```
