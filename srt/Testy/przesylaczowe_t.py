@@ -27,8 +27,16 @@ class Node:
         if prev:
             prev.next = self
 
-    def __str__(self):  # wypisywanie
-        return f"{self.val}" + (f" -> {self.next}" if self.next else "")
+    def __str__(self):
+        result = []
+        start = self
+        while start:
+            result.append(str(start.val))
+            start = start.next
+            if start == self:  # Zakończenie cyklu
+                result.append("(cykl)")
+                break
+        return " -> ".join(result)
 
 
 class przesylaczowe_t(prime):

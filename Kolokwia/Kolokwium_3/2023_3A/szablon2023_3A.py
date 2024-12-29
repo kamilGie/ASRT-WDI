@@ -25,7 +25,7 @@ if __name__ == "__main__":
 
     Zadanie_3A([7, 8, 6, 4, 7, 3])  # return 16.6
 
-    podpowiedz(1)
+    # podpowiedz(1)
     # podpowiedz(2)
     # podpowiedz(3)
 

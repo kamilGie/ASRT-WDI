@@ -9,7 +9,7 @@ def przykladowe_odpalenie(funkcja):
         """lista dwukierunkowa, w zadaniach gdzie jest jednokierunkowa 2 kierunek"""
 
         def __init__(self, val, next=None, prev=None):
-            self.val = val
+            self.key = val
             self.next: Node | None = next
             self.prev: Node | None = prev
             if next:
@@ -17,8 +17,16 @@ def przykladowe_odpalenie(funkcja):
             if prev:
                 prev.next = self
 
-        def __str__(self):  # wypisywanie
-            return f"{self.val}" + (f" -> {self.next}" if self.next else "")
+        def __str__(self):
+            result = []
+            start = self
+            while start:
+                result.append(str(start.key))
+                start = start.next
+                if start == self:  # Zakończenie cyklu
+                    result.append("(cykl)")
+                    break
+            return " -> ".join(result)
 
     """
     Przygotowuje dynamiczne wywołanie funkcji i zwraca przykład wraz z wynikiem w formacie:
@@ -30,6 +38,9 @@ def przykladowe_odpalenie(funkcja):
             parametry_uzytkonwika = input(
                 "Podaj argumenty przykładowego wywołania, które pojawi się w szablonie: "
             )
+            if parametry_uzytkonwika == "skip":
+                return ""
+
             param_values = eval(parametry_uzytkonwika)
             if not isinstance(param_values, tuple):
                 param_values = (param_values,)
