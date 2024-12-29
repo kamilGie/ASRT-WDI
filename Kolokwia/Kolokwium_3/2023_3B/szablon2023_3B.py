@@ -19,11 +19,32 @@
 # ====================================================================================================>
 
 
-def Zadanie_3B(): ...
+class Node:
+    def __init__(self, val, next=None):
+        self.val = val
+        self.next = next
+
+    def __str__(self):  # wypisywanie
+        return f"{self.val}" + (f" -> {self.next}" if self.next else "")
+
+
+
+
+
+
+def make_order(p) -> Node: ...
+
+
+
 
 
 if __name__ == "__main__":
-    from Develop import stworz_zadanie
+    from testy2023_3B import odpal_testy, podpowiedz
 
-    Zadanie_3B()
-    # stworz_zadanie([Zadanie_3B])
+    make_order(Node("gips",Node("ala",Node("sroka"))))  # return gips ->  -> ala ->  -> sroka
+
+    # podpowiedz(1)
+    # podpowiedz(2)
+    # podpowiedz(3)
+
+    # odpal_testy()

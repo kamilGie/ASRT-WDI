@@ -8,11 +8,16 @@
 # ====================================================================================================>
 
 
-def Zadanie_5(): ...
+def Zadanie_5(T): ...
 
 
 if __name__ == "__main__":
-    from Develop import stworz_zadanie
+    from testy2020_5 import odpal_testy, podpowiedz
 
-    Zadanie_5()
-    # stworz_zadanie([Zadanie_5])
+    Zadanie_5([2,3,4,6,7,8,10])  # return 1 (3,4,7)
+
+    # podpowiedz(1)
+    # podpowiedz(2)
+    # podpowiedz(3)
+
+    # odpal_testy()

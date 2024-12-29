@@ -6,6 +6,24 @@ IMPORTY = "import unittest\nfrom contextlib import redirect_stdout\nimport io\n"
 
 ODPAL_TESTY = "def odpal_testy():\n    suite = unittest.TestLoader().loadTestsFromTestCase(testy)\n    unittest.TextTestRunner(verbosity=2,failfast=True).run(suite)\n"
 
+
+def stworz_podpowiedzi():
+    podpowiedzi = []
+
+    # Wymuszenie podania dokładnie trzech podpowiedzi
+    for i in range(1, 4):
+        podp = input(f"💡 Podaj podpowiedź nr {i}: ")
+        podpowiedzi.append(podp)
+
+    # Generowanie funkcji w formacie kodu Python
+    podpowiedzi_code = ",\n        ".join(f'"{p}"' for p in podpowiedzi)
+    return f"""def podpowiedz(nr: int):
+    podpowiedzi = [
+        {podpowiedzi_code}
+    ]
+    print(podpowiedzi[nr - 1])"""
+
+
 KOMENDA = f"""
 def komenda(k: str, *args, **kwargs):
     \"\"\"

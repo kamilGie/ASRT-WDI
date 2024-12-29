@@ -81,10 +81,10 @@ def stworz_zadanie(
         linie_prototypu = file.readlines()
     zadanie = Zadanie(linie_prototypu, sciezka_zadania, nr_zadania, funkcje)
 
-    zadanie.stworz_plik(testy, "Testy")
     zadanie.stworz_plik(README, "README")
     zadanie.stworz_plik(rozwiazanie, "Rozwiazanie")
     zadanie.stworz_plik(szablon, "Szablon")
+    zadanie.stworz_plik(testy, "Testy")
 
     # Jeśli piszemy na prototypie, który nie jest backupem, stwórz z niego backup i usuń
     # zmiana nazwy nie dzialala zawsze z gitem wiec lepiej usunac i stworzyc nowe

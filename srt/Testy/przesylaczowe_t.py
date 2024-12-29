@@ -11,6 +11,7 @@ from _utils_T import (
     ODPAL_TESTY,
     dynamiczny_import_funkcji,
     RAMKA,
+    stworz_podpowiedzi,
 )
 
 
@@ -26,8 +27,16 @@ class Node:
         if prev:
             prev.next = self
 
-    def __str__(self):  # wypisywanie
-        return f"{self.val}" + (f" -> {self.next}" if self.next else "")
+    def __str__(self):
+        result = []
+        start = self
+        while start:
+            result.append(str(start.val))
+            start = start.next
+            if start == self:  # Zakończenie cyklu
+                result.append("(cykl)")
+                break
+        return " -> ".join(result)
 
 
 class przesylaczowe_t(prime):
@@ -49,11 +58,13 @@ class przesylaczowe_t(prime):
         for funkcja in self.funkcje:
             self.generuj_testy_dla_funkcji(funkcja)
 
-        self.finalizuj_testy()
+        self.res += stworz_podpowiedzi()
+        self.res += "\n"
         self.res += ODPAL_TESTY
         self.res += "\n"
         self.res += KOMENDA
         self.res += "\n"
+        self.finalizuj_testy()
         return self.res
 
     def transform_node_syntax(self, input_string):

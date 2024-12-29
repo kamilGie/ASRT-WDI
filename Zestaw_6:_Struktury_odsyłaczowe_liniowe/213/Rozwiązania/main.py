@@ -21,31 +21,28 @@ class Node:
         return f"{self.val}" + (f" -> {self.next}" if self.next else "")
 
 
-def is_repairable(head, step):
-    current_val = head.val
-    while head.next:
-        current_val += step
-        if current_val == head.next.val:
-            head = head.next
-        elif (step > 0 and current_val > head.next.val) or (
-            step < 0 and current_val < head.next.val
-        ):
-            return False
-    return True
+def NWD(a, b):
+    while b != 0:
+        a, b = b, a % b
+    return a
+
+
+def arithmetic_difference(p):
+    value_nwd = 1
+    r = p.next.val - p.val
+
+    while p.next:
+        value_nwd = NWD(r, (p.next.val - p.val))
+        p = p.next
+    return value_nwd
 
 
 def repair(p):
-    original_step = p.next.val - p.val
-
-    divisor = 2
-    step = original_step
-    while not is_repairable(p, step):
-        step = original_step / divisor
-        divisor += 1
+    step = arithmetic_difference(p)
 
     inserted_count = 0
     while p.next:
-        if p.val + step != p.next.val:
+        if ( p.val + step != p.next.val):  # jesli krokiem nie dotarlem do nastpnego elemetu musze go dodac
             p.next = Node(p.val + step, p.next)
             inserted_count += 1
         p = p.next

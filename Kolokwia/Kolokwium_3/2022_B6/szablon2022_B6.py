@@ -7,11 +7,43 @@
 # ====================================================================================================>
 
 
-def Zadanie_B6(): ...
+class Node:
+    def __init__(self, key, next=None):
+        self.key = key
+        self.next = next
+
+    def __str__(self):
+        result = []
+        start = self
+        while start:
+            result.append(str(start.key))
+            start = start.next
+            if start == self:  # Zakończenie cyklu
+                result.append("(cykl)")
+                break
+        return " -> ".join(result)
+
+
+
+
+
+def separate(p): ...
+
+
+
+
+
 
 
 if __name__ == "__main__":
-    from Develop import stworz_zadanie
+    from testy2022_B6 import odpal_testy, podpowiedz
 
-    Zadanie_B6()
-    # stworz_zadanie([Zadanie_B6])
+    p = Node( 1, Node( -1, Node(2, Node(-2, Node(3, Node(-3, Node(4, Node(-4, Node(5, Node(-5)))))))),),)
+    p.next.next.next.next.next.next.next.next.next.next = p
+    separate(p)  # return (even_node, odd_node, 5)
+
+    # podpowiedz(1)
+    # podpowiedz(2)
+    # podpowiedz(3)
+
+    # odpal_testy()

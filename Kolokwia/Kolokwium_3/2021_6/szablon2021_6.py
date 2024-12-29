@@ -16,11 +16,25 @@
 # ====================================================================================================>
 
 
-def Zadanie_6(): ...
+class Node:
+    def __init__(self, val, next=None):
+        self.val = val
+        self.next = next
+
+    def __str__(self):  # wypisywanie
+        return f"{self.val}" + (f" -> {self.next}" if self.next else "")
+
+
+def repair(p): ...
 
 
 if __name__ == "__main__":
-    from Develop import stworz_zadanie
+    from testy2021_6 import odpal_testy, podpowiedz
 
-    Zadanie_6()
-    # stworz_zadanie([Zadanie_6])
+    repair(Node(4, Node(-32, Node(-128, Node(-2048)))))  # return 6
+
+    # podpowiedz(1)
+    # podpowiedz(2)
+    # podpowiedz(3)
+
+    # odpal_testy()

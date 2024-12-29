@@ -7,12 +7,17 @@
 # ====================================================================================================>
 # nic nie zwracać edytowac tablice in place
 
-def Zadanie_226(T)->None: ...
+
+def Zadanie_226(T) -> None: ...
 
 
 if __name__ == "__main__":
-    from testy226 import odpal_testy
+    from testy226 import odpal_testy, podpowiedz
 
-    Zadanie_226(list(input("Podaj T: ")))
+    # Zadanie_226(list(input("Podaj T: ")))
+
+    # podpowiedz(1)
+    # podpowiedz(2)
+    # podpowiedz(3)
 
     # odpal_testy()

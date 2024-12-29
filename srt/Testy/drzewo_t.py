@@ -10,6 +10,7 @@ from _utils_T import (
     NAGLOWEK,
     ODPAL_TESTY,
     dynamiczny_import_funkcji,
+    stworz_podpowiedzi,
     RAMKA,
 )
 
@@ -85,11 +86,13 @@ class drzewo_t(prime):
         for funkcja in self.funkcje:
             self.generuj_testy_dla_funkcji(funkcja)
 
-        self.finalizuj_testy()
+        self.res += stworz_podpowiedzi()
+        self.res += "\n"
         self.res += ODPAL_TESTY
         self.res += "\n"
         self.res += KOMENDA
         self.res += "\n"
+        self.finalizuj_testy()
         return self.res
 
     def transform_tree_syntax(self, input_string: str) -> str:

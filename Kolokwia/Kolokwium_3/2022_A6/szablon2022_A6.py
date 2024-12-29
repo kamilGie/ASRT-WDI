@@ -12,11 +12,38 @@
 # ====================================================================================================>
 
 
-def Zadanie_A6(): ...
+class Node:
+    def __init__(self, val, next=None):
+        self.val = val
+        self.next = next
+
+    def __str__(self):  # wypisywanie
+        return f"{self.val}" + (f" -> {self.next}" if self.next else "")
+
+
+
+
+
+
+
+def insert(p, n): ...
+
+
+
+
 
 
 if __name__ == "__main__":
-    from Develop import stworz_zadanie
+    from testy2022_A6 import odpal_testy, podpowiedz
 
-    Zadanie_A6()
-    # stworz_zadanie([Zadanie_A6])
+
+    p = Node(2023,Node(31,Node(17,Node(703,Node(37)))))
+    p.next.next.next.next.next = p
+    insert(p,303) # return 2
+    
+
+    # podpowiedz(1)
+    # podpowiedz(2)
+    # podpowiedz(3)
+
+    # odpal_testy()

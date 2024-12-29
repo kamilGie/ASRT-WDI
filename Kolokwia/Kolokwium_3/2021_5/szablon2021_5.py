@@ -8,11 +8,16 @@
 # ====================================================================================================>
 
 
-def Zadanie_5(): ...
+def three(T): ...
 
 
 if __name__ == "__main__":
-    from Develop import stworz_zadanie
+    from testy2021_5 import odpal_testy, podpowiedz
 
-    Zadanie_5()
-    # stworz_zadanie([Zadanie_5])
+    three([[14, 24, 14], [24, 24, 24], [24, 24, 14]])  # return 1
+
+    # podpowiedz(1)
+    # podpowiedz(2)
+    # podpowiedz(3)
+
+    # odpal_testy()

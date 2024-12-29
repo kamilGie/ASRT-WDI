@@ -17,11 +17,16 @@
 # ====================================================================================================>
 
 
-def Zadanie_3A(): ...
+def Zadanie_3A(T): ...
 
 
 if __name__ == "__main__":
-    from Develop import stworz_zadanie
+    from testy2023_3A import odpal_testy, podpowiedz
 
-    Zadanie_3A()
-    # stworz_zadanie([Zadanie_3A])
+    Zadanie_3A([7, 8, 6, 4, 7, 3])  # return 16.6
+
+    # podpowiedz(1)
+    # podpowiedz(2)
+    # podpowiedz(3)
+
+    # odpal_testy()
