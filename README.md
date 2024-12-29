@@ -6,7 +6,7 @@ Każdy folder z zadaniem składa się z czterech składników:
 
 1. **`README.md`** – zawiera treść zadania, **główne rozwiązanie** oraz, okazjonalnie, opis rozwiązania.
 2. **`Rozwiązania`** – folder zawierający gotowe rozwiązania zadania.
-3. **`szablon.py`** – plik zawierający szablon do wypełnienia własnym rozwiązaniem.
+3. **`szablon.py`** – szablon do wypełnienia własnym rozwiązaniem, który okazjonalnie zawiera **podpowiedzi** lub wyjaśnienia treści."
 4. **`testy.py`** – plik z testami jednostkowymi.
 
 
@@ -19,6 +19,9 @@ https://github.com/user-attachments/assets/ad6d166e-bda7-4eca-a8cc-86d984913e0f
 ### 🌐 Wizualizacje Rozwiązań
 Niektóre zadania zawierają wizualne wyjaśnienia algorytmów, które są hostowane w chmurze na stronie internetowej lub zrealizowane w Pygame, na przykład [Kolokwium 2022 A3](https://github.com/kamilGie/ASRT-WDI/tree/main/Kolokwia/Kolokwium_2/2022_A3), [160](https://github.com/kamilGie/ASRT-WDI/tree/main/Zestaw_5%3A_Rekurencja/160) czy [112](https://github.com/kamilGie/ASRT-WDI/tree/main/Zestaw_3%3A_Tablice_o_większej_liczbie_wymiarów/112) 
 
+### 💡 Podpowiedzi
+
+Niektóre zadania mają w `szablon` trzy ***podpowiedzi***: 1 Lekko nakieruje,  2 Wyjaśni,  3 Poprowadzi przez zadanie.  Aby je wyświetlić w terminalu, wystarczy odkomentować funkcję, na przykład [226](https://github.com/kamilGie/ASRT-WDI/blob/main/Zestaw_8%3A_Wyszukiwanie_i_sortowanie/226/szablon226.py) czy [Kolokwium 2021 6](https://github.com/kamilGie/ASRT-WDI/blob/main/Kolokwia/Kolokwium_3/2021_6/szablon2021_6.py)
 
 ### 🌑 Czarny Motyw Zestawu
 Każdy zestaw oraz każde zadanie zawiera plik `README` z opisem zadań. Jeśli masz ustawiony czarny motyw na GitHubie, zestaw ten będzie wyświetlany w ciemnej wersji.
@@ -78,17 +81,15 @@ Jestem ogromnie wdzięczny ich autorom za świetne prace, które bardzo pomogły
 ## 🤝 Jak pomóc i zostać współtwórcą?
 
 
-- Zalecam [***utworzenie forka***](https://github.com/kamilGie/WDI/fork) oraz samodzielne stworzenie zadania i zgłaszanie swoich zmian za pomocą pull requestów.
-- Można również [dodać rozwiązanie zadania](https://github.com/kamilGie/ASRT-WDI/new/main/bufor_rozwi%C4%85za%C5%84), nie wychodząc z przeglądarki, korzystając z opcji "dodaj plik" w folderze bufor rozwiązań. W wolnym czasie będę z nich tworzył zadania. Szczegóły znajdziesz w [README folderu bufor rozwiązań](/bufor_rozwiązań).
+- Zalecam [***utworzenie forka***](https://github.com/kamilGie/WDI/fork) i zgłaszanie swoich zmian za pomocą pull requestów.
 
-
-### 💡 Możliwe Ulepszenia ### 
+### 💡 Możliwe Ulepszenia
 - ✏️ Stworzenie Zadania
 - 🛠️ Poprawienie treści zadania, jeśli jest niejasna lub brakuje np. znaków potęgowania.
 - 🔧 Ulepszanie testow poprzez komendy lub stworzeniej własnej [Szczegóły](#komendy)
 - 🧠 Tworzenie Strategi Tworzenia Zadań [Szczegóły](#strategie)
   
-SRT opiera się na **rozszerzaniu funkcjonalności**. Dzięki temu możesz dodawać nowe funkcje i strategie bez modyfikacji istniejącego kodu, co ułatwia wdrożenie bez potrzeby wiedzy o całym systemie i unika konfliktów.
+ASRT opiera się na **rozszerzaniu funkcjonalności**. Dzięki temu możesz dodawać nowe funkcje i strategie bez modyfikacji istniejącego kodu, co ułatwia wdrożenie bez potrzeby wiedzy o całym systemie i unika konfliktów.
 ### 🐛 Zgłaszanie błędów
 
 - Błędy w rozwiązaniach, testach lub treściach można zgłaszać <a href="https://github.com/kamilgie/ASRT-WDI/issues/new?labels=bug"> ****tutaj**** </a>
@@ -164,10 +165,11 @@ Widzimy, że mimo poprawnego wyniku mamy błędny test, ponieważ wypisujemy wyn
 - Zmienić typ lub format wyjścia na taki, jaki jest oczekiwany w teście.
 - Zainteresować się pomocą w rozwijaniu projektu i za pomocą komendy dodać swoją funkcję wraz z jej rozwiązaniem do listy poprawnych odpowiedzi, aby inni użytkownicy mieli dobre testy dla takich samych wyników jak twój.
 
+Często też zadania mają kilka poprawnych odpowiedzi, więc na każdy test trzeba być czujnym i analizować jego poprawność. W takich przypadkach również nalegam, by zgłaszać mi takie zadania, ponieważ będą dodawane inne warianty poprawnej odpowiedzi.
+
 Więcej o tym, jak działa cały projekt w 
 
 
-  
 ---
 </details>
 
@@ -195,30 +197,47 @@ if __name__ == "__main__":
     # stworz_zadanie([dodaj, mnoż])
 ```
 
-Funkcja `stworz_zadanie` działa podobnie jak funkcja `print`. Można ją uruchomić bez dodatkowych parametrów, aby wygenerować domyślną strukturę plików: `rozwiazanie.py`, `testy.py` oraz `szablon.py`. 
+Funkcja `stworz_zadanie` działa podobnie jak funkcja `print`. Można ją uruchomić bez dodatkowych parametrów, aby wygenerować domyślną strukturę plików: `README.md`, `testy.py`  `szablon.py` oraz folder `Rozwiązania`. 
 
 ### Modyfikacje 
 
 Można modyfikować sposób, w jaki generowane są pliki, ustawiając argumenty nazw plików. Modyfikacje są podawane jako stringi, które określają  strategie, z jaką wygenerują się pliki. Dla podstawowego użycia projektu przydatne będą trzy modyfikacje:
 
 ```python
+# Stworzy testy, których wyniki będą zaokrąglone.
+# Przydatne w zadaniach zwracających wartości typu `float`, gdzie wyniki mogą się różnić od ustawionego epsilonu.
 stworz_zadanie([dodaj, mnoż], testy="float")
 ```
-- Stworzy testy, których wyniki będą zaokrąglone. Przydatne w zadaniach zwracających wartości typu `float`, gdzie wyniki mogą się różnić od ustawionego epsilonu.
-  
+
 ```python
+# Stworzy testy, których wyniki będą w typie `set`.
+#  Przydatne w zadaniach, w których kolejność lub częstotliwość występowania wyników nie ma znaczenia.
 stworz_zadanie([dodaj, mnoż], testy="bez_kolejnosci")
 ```
-- Stworzy testy, których wyniki będą w typie `set`. Przydatne w zadaniach, w których kolejność lub częstotliwość występowania wyników nie ma znaczenia.
 ```python
+#  Nie stworzy pliku.
+#  Przydatne w zadaniach abstrakcyjnych, które nie są możliwe do przetestowania.
 stworz_zadanie([dodaj, mnoż], testy="brak", szablon="brak")
 ```
-- Nie stworzy pliku. Przydatne w zadaniach abstrakcyjnych, które nie są możliwe do przetestowania.
+
+```python
+# Stworzy zadanie które polega na listach przesyłaczowych
+stworz_zadanie([dodaj, mnoż], testy="przesylaczowe_t", szablon="przesylaczowe_s", README="przesylaczowe_rm")
+```
+
 
 Dokładniej o modyfikacjach jest w sekcji [strategie](#Strategie)
 
 <details>
    <summary> Domyślna konfiguracja plików </summary>
+
+### `README.md` 
+1. Dodaje kod do wyświetlania treści zależnych od motywu.
+2. Dodaje linię, aby README formatowało się jak Python.
+3. Z szablonu usuwa treści i zaczyna od pierwszej niezkomentowanej linijki.
+4. Po napotkaniu `main` przestaje pisać.
+5. Kończy formatowanie Pythonowe.
+
 
 ### `rozwiazanie.py` 
 1. przepisuje prototyp do napotkania linijki main
@@ -239,10 +258,11 @@ def mnoż(a, b):
 1. Przepisuje pierwsze linie, które są komentarzami, aby zostawić opis zadania wraz z ewentualnymi komentarzami twórcy zadania.
 2. Następnie usuwa wszystkie linijki poza linijką zaczynającą się od `def FunkcjaKtoraTestujemy(`. Tę linijkę pozostawia i dopisuje trzy kropki, aby użytkownik wiedział, że te funkcje są do napisania.
 3. Usuwa wszystkie linie do momentu napotkania bloku `if __name__ == "__main__":`.
-4. Zapisuje import funkcji `odpal_testy`.
-5. Zapisuje uruchomienie funkcji, które testujemy, wraz z dynamicznym wprowadzeniem nazw ich argumentów.
-6. Zakomentowana metoda `odpal_testy()`, która będzie uruchamiać testy.
-
+4. Zapisuje import funkcji `odpal_testy`. oraz `podpowiedz`
+5. Prosi użytkownika o wprowadzenie argumentów, które pojawią się w szablonie wraz z jego zakomentowanym wynikiem.
+6. zakomentwane funkcje podpowiedz
+7. Zakomentowana metoda `odpal_testy()`, która będzie uruchamiać testy.
+   
 ```python
 # ====================================================================================================>
 # Zadanie 0
@@ -254,10 +274,14 @@ def dodaj(a, b): ...
 def mnoż(a, b): ...
 
 if __name__ == "__main__":
-    from testy01 import odpal_testy
+    from testy01 import odpal_testy, podpowiedz
 
-    dodaj(input('Podaj a: '), input('Podaj b: '))
-    mnoż(input('Podaj a: '), input('Podaj b: '))
+    dodaj(2, 3) # return 5
+    mnoż(2,2)  # return 4
+
+    # podpowiedz(1)
+    # podpowiedz(2)
+    # podpowiedz(3)
 
     # odpal_testy()
 ```
@@ -270,316 +294,13 @@ if __name__ == "__main__":
 5. Przetwarza input użytkownika, zmieniając go na argumenty według algorytmów.
 6. Uruchamia funkcję z argumentami testowymi, monitorując jednocześnie wartości wypisywane przez `print` oraz wartości zwracane przez funkcję.
 7. Jeśli funkcja nic nie zwróci, wynikiem zostanie to, co zostało przechwycone przez `print`. Jeśli funkcja zwróci inną wartość, to ona będzie wynikiem, a dane wypisane przez `print` zostaną zignorowane.
-8. Z argumentów i wyniku napisze metodę testową o nazwie `test_numerTestu_funkcjaTestowalna_argument`.
+8. Z argumentów i wyniku napisze metodę testową o nazwie `test_numerTestu_funkcjaTestowalna`.
 ```python
-    def test_Nr1_dodaj_argumenty_2_2(self):
-        wynik  = dodaj(2, 2)
-
-        oczekiwany_wynik = [4]
-        self.assertIn(wynik, oczekiwany_wynik)
+    def test_Nr1_dodaj(self):
+        self.assertIn( dodaj(2, 2), 4)
 ```
 9. Będzie powtarzać proces od punktów 3–8, aż do napotkania argumentu `stop` od użytkownika, który zakończy testy.
 
-<details>
-   <summary>Pelny kod testy przykladu </summary>
-   
-```python 
-import unittest
-import io
-import os
-import sys
-from contextlib import redirect_stdout
-import importlib
-
-from szablon01 import dodaj, mnoż
-
-
-def odpal_testy():
-    suite = unittest.TestLoader().loadTestsFromTestCase(testy)
-    unittest.TextTestRunner(verbosity=2).run(suite)
-
-
-def komenda(k: str, *args, **kwargs):
-    """
-    Wykonuje zadaną komendę z przekazanymi argumentami.
-    Dodanie własnej komendy ogranicza sie do dodania pliku z funkcja o tej samej nazwie
-    w folderze glównym projektu src/Komendy
-    Wiecej informacji o dodaniu wlasnej komendy jak i lista komend w ReadMe projektu
-
-    Args:
-        k (str): Komenda do wykonania.
-        *args: Dodatkowe argumenty do komendy.
-        **kwargs: Dodatkowe argumenty kluczowe do komendy.
-    """
-    sciezka_pliku_wykonalnego = os.path.abspath(sys.argv[0])
-    srt_dir = os.path.join(
-        os.path.dirname(sciezka_pliku_wykonalnego), "../../srt"
-    )
-    sys.path.append(srt_dir)
-    nr_zadania = os.path.dirname(sciezka_pliku_wykonalnego)
-    return importlib.import_module("WykonajKomende").wykonaj_komende(
-        k, sciezka_pliku_wykonalnego, nr_zadania, *args, **kwargs
-    )
-
-
-class testy(unittest.TestCase):
-
-    def test_Nr1_dodaj_argumenty_2_2(self):
-        wynik  = dodaj(2, 2)
-
-        oczekiwany_wynik = [4]
-        self.assertIn(wynik, oczekiwany_wynik)
-
-    def test_Nr2_dodaj_argumenty_14_123(self):
-        wynik  = dodaj(14, 123)
-
-        oczekiwany_wynik = [137]
-        self.assertIn(wynik, oczekiwany_wynik)
-
-    def test_Nr3_dodaj_argumenty_123_123(self):
-        wynik  = dodaj(123, 123)
-
-        oczekiwany_wynik = [246]
-        self.assertIn(wynik, oczekiwany_wynik)
-
-    def test_Nr4_dodaj_argumenty_123_1123(self):
-        wynik  = dodaj(123, 1123)
-
-        oczekiwany_wynik = [1246]
-        self.assertIn(wynik, oczekiwany_wynik)
-
-    def test_Nr5_dodaj_argumenty_12_3123(self):
-        wynik  = dodaj(12, 3123)
-
-        oczekiwany_wynik = [3135]
-        self.assertIn(wynik, oczekiwany_wynik)
-
-    def test_Nr6_dodaj_argumenty_12_3123(self):
-        wynik  = dodaj(12, 3123)
-
-        oczekiwany_wynik = [3135]
-        self.assertIn(wynik, oczekiwany_wynik)
-
-    def test_Nr7_dodaj_argumenty_-213_12312(self):
-        wynik  = dodaj(-213, 12312)
-
-        oczekiwany_wynik = [12099]
-        self.assertIn(wynik, oczekiwany_wynik)
-
-    def test_Nr8_dodaj_argumenty_2_2(self):
-        wynik  = dodaj(2, 2)
-
-        oczekiwany_wynik = [4]
-        self.assertIn(wynik, oczekiwany_wynik)
-
-    def test_Nr9_dodaj_argumenty_2_4(self):
-        wynik  = dodaj(2, 4)
-
-        oczekiwany_wynik = [6]
-        self.assertIn(wynik, oczekiwany_wynik)
-
-    def test_Nr10_dodaj_argumenty_2_-1(self):
-        wynik  = dodaj(2, -1)
-
-        oczekiwany_wynik = [1]
-        self.assertIn(wynik, oczekiwany_wynik)
-
-    def test_Nr11_dodaj_argumenty_2913_123(self):
-        wynik  = dodaj(2913, 123)
-
-        oczekiwany_wynik = [3036]
-        self.assertIn(wynik, oczekiwany_wynik)
-
-    def test_Nr12_dodaj_argumenty_324_56234(self):
-        wynik  = dodaj(324, 56234)
-
-        oczekiwany_wynik = [56558]
-        self.assertIn(wynik, oczekiwany_wynik)
-
-    def test_Nr13_dodaj_argumenty_21_35(self):
-        wynik  = dodaj(21, 35)
-
-        oczekiwany_wynik = [56]
-        self.assertIn(wynik, oczekiwany_wynik)
-
-    def test_Nr14_dodaj_argumenty_12_4(self):
-        wynik  = dodaj(12, 4)
-
-        oczekiwany_wynik = [16]
-        self.assertIn(wynik, oczekiwany_wynik)
-
-    def test_Nr15_dodaj_argumenty_0_0(self):
-        wynik  = dodaj(0, 0)
-
-        oczekiwany_wynik = [0]
-        self.assertIn(wynik, oczekiwany_wynik)
-
-    def test_Nr16_dodaj_argumenty_-1_-1(self):
-        wynik  = dodaj(-1, -1)
-
-        oczekiwany_wynik = [-2]
-        self.assertIn(wynik, oczekiwany_wynik)
-
-    def test_Nr17_dodaj_argumenty_1_1(self):
-        wynik  = dodaj(1, 1)
-
-        oczekiwany_wynik = [2]
-        self.assertIn(wynik, oczekiwany_wynik)
-
-    def test_Nr18_dodaj_argumenty_12_23(self):
-        wynik  = dodaj(12, 23)
-
-        oczekiwany_wynik = [35]
-        self.assertIn(wynik, oczekiwany_wynik)
-
-    def test_Nr19_dodaj_argumenty_2_1(self):
-        wynik  = dodaj(2, 1)
-
-        oczekiwany_wynik = [3]
-        self.assertIn(wynik, oczekiwany_wynik)
-
-    def test_Nr20_dodaj_argumenty_2_5(self):
-        wynik  = dodaj(2, 5)
-
-        oczekiwany_wynik = [7]
-        self.assertIn(wynik, oczekiwany_wynik)
-
-    def test_Nr21_dodaj_argumenty_21_1(self):
-        wynik  = dodaj(21, 1)
-
-        oczekiwany_wynik = [22]
-        self.assertIn(wynik, oczekiwany_wynik)
-
-    def test_Nr1_mnoż_argumenty_213_4512(self):
-        wynik  = mnoż(213, 4512)
-
-        oczekiwany_wynik = [961056]
-        self.assertIn(wynik, oczekiwany_wynik)
-
-    def test_Nr2_mnoż_argumenty_-4_12(self):
-        wynik  = mnoż(-4, 12)
-
-        oczekiwany_wynik = [-48]
-        self.assertIn(wynik, oczekiwany_wynik)
-
-    def test_Nr3_mnoż_argumenty_-3_-2(self):
-        wynik  = mnoż(-3, -2)
-
-        oczekiwany_wynik = [6]
-        self.assertIn(wynik, oczekiwany_wynik)
-
-    def test_Nr4_mnoż_argumenty_0_0(self):
-        wynik  = mnoż(0, 0)
-
-        oczekiwany_wynik = [0]
-        self.assertIn(wynik, oczekiwany_wynik)
-
-    def test_Nr5_mnoż_argumenty_-231_-2312(self):
-        wynik  = mnoż(-231, -2312)
-
-        oczekiwany_wynik = [534072]
-        self.assertIn(wynik, oczekiwany_wynik)
-
-    def test_Nr6_mnoż_argumenty_23_1(self):
-        wynik  = mnoż(23, 1)
-
-        oczekiwany_wynik = [23]
-        self.assertIn(wynik, oczekiwany_wynik)
-
-    def test_Nr7_mnoż_argumenty_231_213(self):
-        wynik  = mnoż(231, 213)
-
-        oczekiwany_wynik = [49203]
-        self.assertIn(wynik, oczekiwany_wynik)
-
-    def test_Nr8_mnoż_argumenty_21_-123(self):
-        wynik  = mnoż(21, -123)
-
-        oczekiwany_wynik = [-2583]
-        self.assertIn(wynik, oczekiwany_wynik)
-
-    def test_Nr9_mnoż_argumenty_52_1(self):
-        wynik  = mnoż(52, 1)
-
-        oczekiwany_wynik = [52]
-        self.assertIn(wynik, oczekiwany_wynik)
-
-    def test_Nr10_mnoż_argumenty_3213_-3212(self):
-        wynik  = mnoż(3213, -3212)
-
-        oczekiwany_wynik = [-10320156]
-        self.assertIn(wynik, oczekiwany_wynik)
-
-    def test_Nr11_mnoż_argumenty_-1_12(self):
-        wynik  = mnoż(-1, 12)
-
-        oczekiwany_wynik = [-12]
-        self.assertIn(wynik, oczekiwany_wynik)
-
-    def test_Nr12_mnoż_argumenty_3_212(self):
-        wynik  = mnoż(3, 212)
-
-        oczekiwany_wynik = [636]
-        self.assertIn(wynik, oczekiwany_wynik)
-
-    def test_Nr13_mnoż_argumenty_213_123(self):
-        wynik  = mnoż(213, 123)
-
-        oczekiwany_wynik = [26199]
-        self.assertIn(wynik, oczekiwany_wynik)
-
-    def test_Nr14_mnoż_argumenty_123_213(self):
-        wynik  = mnoż(123, 213)
-
-        oczekiwany_wynik = [26199]
-        self.assertIn(wynik, oczekiwany_wynik)
-
-    def test_Nr15_mnoż_argumenty_54_6435(self):
-        wynik  = mnoż(54, 6435)
-
-        oczekiwany_wynik = [347490]
-        self.assertIn(wynik, oczekiwany_wynik)
-
-    def test_Nr16_mnoż_argumenty_435_43(self):
-        wynik  = mnoż(435, 43)
-
-        oczekiwany_wynik = [18705]
-        self.assertIn(wynik, oczekiwany_wynik)
-
-    def test_Nr17_mnoż_argumenty_34_5345(self):
-        wynik  = mnoż(34, 5345)
-
-        oczekiwany_wynik = [181730]
-        self.assertIn(wynik, oczekiwany_wynik)
-
-    def test_Nr18_mnoż_argumenty_34_53(self):
-        wynik  = mnoż(34, 53)
-
-        oczekiwany_wynik = [1802]
-        self.assertIn(wynik, oczekiwany_wynik)
-
-    def test_Nr19_mnoż_argumenty_3_45(self):
-        wynik  = mnoż(3, 45)
-
-        oczekiwany_wynik = [135]
-        self.assertIn(wynik, oczekiwany_wynik)
-
-    def test_Nr20_mnoż_argumenty_3_3(self):
-        wynik  = mnoż(3, 3)
-
-        oczekiwany_wynik = [9]
-        self.assertIn(wynik, oczekiwany_wynik)
-
-    def test_Nr21_mnoż_argumenty_345_34(self):
-        wynik  = mnoż(345, 34)
-
-        oczekiwany_wynik = [11730]
-        self.assertIn(wynik, oczekiwany_wynik)
-
-
-```
-
-</details>
 
 </details>
 
@@ -588,27 +309,27 @@ class testy(unittest.TestCase):
 ## Pisanie Testów
 
 
-Po uruchomieniu funkcji `stworz_testy`, jeśli liczba argumentów przekazanych do testowania funkcji nie wynosi zero, program poprosi użytkownika o wpisanie argumentów testowych.
+Po uruchomieniu funkcji `stworz_testy`, jeśli liczba argumentów przekazanych do testowania funkcji jest większa niż zero, program poprosi użytkownika o podanie argumentów testowych. Argumenty należy wpisywać w tej samej formie, jak w wywołaniu funkcji w Pythonie.
 
-- Argumenty należy wpisywać, oddzielając je spacjami lub przecinkami.
-  <img width="723" alt="Zrzut ekranu 2024-11-7 o 00 47 45" src="https://github.com/user-attachments/assets/ab503d2a-321c-494b-be07-0fe6a90e959c">
+Najpierw program poprosi o wpisanie argumentów do szablonu, aby użytkownik mógł zobaczyć przykładowe wywołanie w szablonie wraz z wynikiem.
 
-- Tablice wpisuje się, używając nawiasów kwadratowych, przy czym dozwolone jest zagnieżdżanie tablic dowolną ilość razy.
-  <img width="724" alt="Zrzut ekranu 2024-11-7 o 00 02 27" src="https://github.com/user-attachments/assets/763ca1e4-913b-4f47-8a17-1abff1997f7e">
+<img width="1000" alt="Zrzut ekranu 2024-12-29 o 20 19 47" src="https://github.com/user-attachments/assets/5a342afc-c949-4573-a3d6-4706f3623f1b" />
 
-- Stringi należy podać w cudzysłowach, a także możliwe jest zagnieżdżanie cudzysłowów.
-  <img width="724" alt="Zrzut ekranu 2024-11-7 o 00 07 02" src="https://github.com/user-attachments/assets/bb138ead-76c4-46c3-a529-2309042c9fa1">
+Następnie program poprosi o wpisywanie argumentów testowych, które posłużą do testowania funkcji w pliku `testy.py`.
 
-- Jeśli argumenty wpisane będą się nie zgadzać, program poprosi o ponowne ich wprowadzenie.
-  <img width="724" alt="Zrzut ekranu 2024-11-7 o 00 40 42" src="https://github.com/user-attachments/assets/61400923-4454-4aba-95c4-656b6eebc3e7">
+<img width="999" alt="Zrzut ekranu 2024-12-29 o 20 18 33" src="https://github.com/user-attachments/assets/570a5893-090e-45a2-b758-89ff0cca42a8" />
+
 
 Po stworzeniu odpowiedniej ilości testów, można zakończyć proces tworzenia testów, podając argument `stop`, co zakończy Twój wkład w tworzenie testów.
+
+Na sam koniec program poprosi o podanie trzech podpowiedzi dla użytkownika.
+<img width="1000" alt="Zrzut ekranu 2024-12-29 o 20 23 14" src="https://github.com/user-attachments/assets/80f5396c-1088-4db8-8b07-e6d0691ca9d7" />
 
 ###  Finalizacja
 
 Po stworzeniu trzech plików funkcja utworzy plik `prototypBackup.py`, aby bezpiecznie móc usunąć prototyp. Plik `prototypBackup.py` jest ignorowany przez `.gitignore`, więc nie będzie dodawany do głównego repozytorium. Został stworzony, aby w przypadku błędnego stworzenia zadania z różnych powodów móc utworzyć zadanie na nowo. Funkcja `stworz_zadanie` dba o to, by nie usunąć pliku `prototypBackup`, dzięki czemu można tworzyć zadania do momentu zadowolenia z efektu końcowego.
 
-Na tym kończy się funkcja `stworz_zadanie`. Jeśli jednak komuś nie podoba się sposób w jaki pliki `rozwiazanie.py`, `szablon.py`, `testy.py` są tworzone, chciałby dodać jakąś funkcjonalność lub inaczej tworzyć testy zawsze może stworzyć własną Strategię!
+Na tym kończy się funkcja `stworz_zadanie`. Jeśli jednak komuś nie podoba się sposób w jaki pliki `README.py`, `szablon.py`, `testy.py` lub folder `Rozwiazania` są tworzone, chciałby dodać jakąś funkcjonalność lub inaczej tworzyć testy zawsze może stworzyć własną Strategię!
 
 ---
 </details>
@@ -617,7 +338,7 @@ Na tym kończy się funkcja `stworz_zadanie`. Jeśli jednak komuś nie podoba si
   <summary>🧠 Strategie</summary>
 
 ## Strategie
-Strategie definiują sposób, w jaki będziemy tworzyć nasze pliki w projekcie. Aktualna lista strategii znajduje się w folderach o odpowiednich nazwach: [srt/Szablon](srt/Szablon), [srt/Rozwiazania](srt/Rozwiazania), [srt/Testy](srt/Testy). Każda z nich jest klasą z krótkim komentarzem opisującym jej przeznaczenie i jest dostępna do użycia przez każdego twórcę zadania. 
+Strategie definiują sposób, w jaki będziemy tworzyć nasze pliki w projekcie. Aktualna lista strategii znajduje się w folderach o odpowiednich nazwach: [srt/README](srt/README) [srt/Szablon](srt/Szablon), [srt/Rozwiazania](srt/Rozwiazania), [srt/Testy](srt/Testy). Każda z nich jest klasą z krótkim komentarzem opisującym jej przeznaczenie i jest dostępna do użycia przez każdego twórcę zadania. 
 
 Taki układ projektu pozwala na prosty rozwój i umożliwia rozwijanie go przez każdego, bez potrzeby znajomości całego systemu. Każdy może napisać własną klasę domyślną, która będzie następnie testowana w użyciu. Po tym, jak stanie się powszechniejsza, szybsza lub lepsza, zostanie ustawiona jako domyślna. Można również dodać klasę dodatkową, która obsługuje testy dla określonej puli zadań, dla których domyślne tworzenie zadania nie jest wystarczające.
 
@@ -647,13 +368,8 @@ class data(domyslne_s):
         res += super().__str__()
         return res
 ```
-Tak stworzoną klasę możemy już używać w funkcji `stworz_zadanie`, podając argument `szablon="data"`.
 
----
-
-- **`meritum`** strategia rozwiazania  która koncentruje się wyłącznie na samym rozwiązaniu, pomijając opis zadania oraz sekcję `main`
-
- Aby dostosować sposób generowania pliku, można skorzystać z atrybutów klasy bazowej, które są dostępne w klasach pochodnych:
+Aby dostosować sposób generowania pliku, można skorzystać z atrybutów klasy bazowej, które są dostępne w klasach pochodnych:
 
 - **`linie_prototypu`** – lista stringów reprezentujących linie prototypu.
 - **`nr_zadania`** – numer zadania, które rozwiązujemy.
