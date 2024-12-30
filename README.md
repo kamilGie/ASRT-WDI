@@ -4,9 +4,9 @@
 
 Każdy folder z zadaniem składa się z czterech składników:
 
-1. **`README.md`** – zawiera treść zadania, **główne rozwiązanie** oraz, okazjonalnie, opis rozwiązania.
-2. **`Rozwiązania`** – folder zawierający gotowe rozwiązania zadania.
-3. **`szablon.py`** – szablon do wypełnienia własnym rozwiązaniem, który okazjonalnie zawiera **podpowiedzi** lub wyjaśnienia treści."
+1. **`README.md`** – Zawiera treść zadania, **główne rozwiązanie**. Okazjonalnie, opis rozwiązania.
+2. **`Rozwiązania`** – folder z  gotowymi rozwiązaniami zadania.
+3. **`szablon.py`** – Zawiera szablon do wypełnienia rozwiązaniem. Okazjonalnie **podpowiedzi** lub wyjaśnienia treści.
 4. **`testy.py`** – plik z testami jednostkowymi.
 
 
@@ -17,38 +17,21 @@ Wypełnij plik `szablon.py` i uruchom go, odkomentowując funkcję `odpal_testy(
 https://github.com/user-attachments/assets/ad6d166e-bda7-4eca-a8cc-86d984913e0f
 
 ### 🌐 Wizualizacje Rozwiązań
-Niektóre zadania zawierają wizualne wyjaśnienia algorytmów, które są hostowane w chmurze na stronie internetowej lub zrealizowane w Pygame, na przykład [Kolokwium 2022 A3](https://github.com/kamilGie/ASRT-WDI/tree/main/Kolokwia/Kolokwium_2/2022_A3), [160](https://github.com/kamilGie/ASRT-WDI/tree/main/Zestaw_5%3A_Rekurencja/160) czy [112](https://github.com/kamilGie/ASRT-WDI/tree/main/Zestaw_3%3A_Tablice_o_większej_liczbie_wymiarów/112) 
+Niektóre zadania zawierają wizualne wyjaśnienia algorytmów, które są hostowane w chmurze na stronie internetowej lub zrealizowane w Pygame, na przykład [Kolokwium 2022 A3](https://github.com/kamilGie/ASRT-WDI/tree/main/Kolokwia/Kolokwium_2/2022_A3), [160](https://github.com/kamilGie/ASRT-WDI/tree/main/Zestaw_5%3A_Rekurencja/160) lub [112](https://github.com/kamilGie/ASRT-WDI/tree/main/Zestaw_3%3A_Tablice_o_większej_liczbie_wymiarów/112) 
 
 ### 💡 Podpowiedzi
 
-Niektóre zadania mają w `szablon` trzy ***podpowiedzi***: 1 Lekko nakieruje,  2 Wyjaśni,  3 Poprowadzi przez zadanie.  Aby je wyświetlić w terminalu, wystarczy odkomentować funkcję, na przykład [226](https://github.com/kamilGie/ASRT-WDI/blob/main/Zestaw_8%3A_Wyszukiwanie_i_sortowanie/226/szablon226.py) czy [Kolokwium 2021 6](https://github.com/kamilGie/ASRT-WDI/blob/main/Kolokwia/Kolokwium_3/2021_6/szablon2021_6.py)
+Niektóre zadania mają w `szablon.py` trzy ***podpowiedzi***: 1 Lekko nakieruje, 2 Wyjaśni, 3 Poprowadzi przez zadanie, na przykład [Kolokwium 2021 6](https://github.com/kamilGie/ASRT-WDI/blob/main/Kolokwia/Kolokwium_3/2021_6/szablon2021_6.py), [226](https://github.com/kamilGie/ASRT-WDI/blob/main/Zestaw_8%3A_Wyszukiwanie_i_sortowanie/226/szablon226.py) lub [56](https://github.com/kamilGie/ASRT-WDI/blob/main/Zestaw_1%3A_Proste_programy_z_p%C4%99tlami/56/szablon56.py)
 
 ### 🌑 Czarny Motyw Zestawu
 Każdy zestaw oraz każde zadanie zawiera plik `README` z opisem zadań. Jeśli masz ustawiony czarny motyw na GitHubie, zestaw ten będzie wyświetlany w ciemnej wersji.
 
 
-### 🐛 Zgłaszanie Błędów
-Błędy w rozwiązaniach, testach lub treściach zgłaszaj na <a href="https://github.com/kamilgie/ASRT-WDI/issues/new?labels=bug">****Issues****</a> lub <a href="https://gieras.pl/">****prywatnie****</a>.
-
-
 ### 🧱 Prototypy
 Nierozwiązane zadania znajdują się w plikach `prototyp.py` i czekają na rozwiązanie. Po rozwiązaniu zadania można stworzyć pełne zadanie, automatycznie generując wszystkie pliki.
 
-
-<details>
-   
-   <summary> Tworzenie Zadań na prototypie </summary>
-
-1. Po rozwiązaniu zadania na `prototyp.py` można stworzyć pełne zadanie, odkomentowując funkcję `stworz_zadanie` i przekazując w tablicy funkcje, które mają być objęte testami.
-2. Funkcja `stworz_zadanie` automatycznie przygotuje testy na podstawie przekazanych funkcji. Poprosi również o podanie argumentów testowych, które Twoim zdaniem mogą być interesujące lub problematyczne.
-3. Następnie utworzy folder zadania zawierający pliki: `rozwiazanie.py` oraz `szablon.py` na podstawie `prototyp.py`, a także `testy.py` na podstawie wcześniej wygenerowanych testów.
-
-https://github.com/user-attachments/assets/f3316918-a5e9-457f-8c2e-b4a5e5f0f27c
-
-
-
-</details>
-
+### 🐛 Zgłaszanie Błędów
+Błędy w rozwiązaniach, testach lub treściach zgłaszaj na <a href="https://github.com/kamilgie/ASRT-WDI/issues/new?labels=bug">****Issues****</a> lub <a href="https://gieras.pl/">****prywatnie****</a>.
 
  
 ---
@@ -175,6 +158,18 @@ Więcej o tym, jak działa cały projekt w
 
 <details>
   <summary> ✏️  Tworzenie Zadania z prototypu  </summary>
+
+
+  
+   
+## Tworzenie Zadań na prototypie
+
+1. Po rozwiązaniu zadania na `prototyp.py` można stworzyć pełne zadanie, odkomentowując funkcję `stworz_zadanie` i przekazując w tablicy funkcje, które mają być objęte testami.
+2. Funkcja `stworz_zadanie` automatycznie przygotuje testy na podstawie przekazanych funkcji. Poprosi również o podanie argumentów testowych, które Twoim zdaniem mogą być interesujące lub problematyczne.
+3. Następnie utworzy folder zadania zawierający pliki: `rozwiazanie.py` oraz `szablon.py` na podstawie `prototyp.py`, a także `testy.py` na podstawie wcześniej wygenerowanych testów.
+
+https://github.com/user-attachments/assets/f3316918-a5e9-457f-8c2e-b4a5e5f0f27c
+
 
 ## Tworzenie Zadania
 ### `stworz_zadanie()` 
