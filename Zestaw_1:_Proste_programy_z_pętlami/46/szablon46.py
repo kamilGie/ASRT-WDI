@@ -1,0 +1,21 @@
+# ====================================================================================================>
+# Zadanie 46
+# Mając daną dodatnią liczbę całkowitą N , stwórzmy nową liczbę dodając kwadraty cyfr
+# liczby N . Można udowodnić, że postępując w ten sposób wielokrotnie otrzymamy w końcu wynik 1 lub 4.
+# Przykład:13=1^2+3^2=1+9=10(Krok1)10=1^2+0^2=1+0=1(Krok2,kończy my iterację ponieważ uzyskaliśmy liczbę 1)
+# Jeżeli w opisanej powyżej procedurze uzyskamy wynik 1,to liczbę N nazywamy“jednokwadratową”.
+# Proszę napisać program, który znajduje K-tą liczbę w zadanym przedziale [L, U ], która jest
+# jednocześnie jedno-kwadratowa i pierwsza.
+# ====================================================================================================>
+# zadanie_46(0,1000000,3) -> return 3 liczba ktora spelnia wymagania w przedziale od 0 do 10000000
+
+
+def Zadanie_46(L, U, K): ...
+
+
+if __name__ == "__main__":
+    from testy46 import odpal_testy
+
+    Zadanie_46(0,1000000,3)  # return 19
+
+    # odpal_testy()

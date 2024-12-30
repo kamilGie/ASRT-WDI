@@ -8,11 +8,16 @@
 # ====================================================================================================>
 
 
-def Zadanie_56(): ...
+def Zadanie_56(K): ...
 
 
 if __name__ == "__main__":
-    from Develop import stworz_zadanie
+    from testy56 import odpal_testy, podpowiedz
 
-    Zadanie_56()
-    # stworz_zadanie([Zadanie_56])
+    Zadanie_56(1202742516)  # return 251
+
+    # podpowiedz(1)
+    # podpowiedz(2)
+    # podpowiedz(3)
+
+    # odpal_testy()

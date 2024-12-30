@@ -7,11 +7,22 @@
 # ====================================================================================================>
 
 
-def Zadanie_43(): ...
+def Zadanie_43(S):
+    n = 1
+    while 10**n <= S:
+        n += 1
+    start = 10 ** (n - 1)  # Najmniejsza liczba o n cyfrach
+    end = 10**n  # Najmniejsza liczba o (n+1) cyfrach
+
+    # Szukamy największej liczby od końca zakresu
+    for liczba in range(end - 1, start - 1, -1):
+        suma_poteg = 0
+        tmp = liczba
+        while tmp > 0:
+            suma_poteg += (tmp % 10) ** n
+            tmp //= 10
+        if suma_poteg == S:
+            return liczba
+    return None
 
 
-if __name__ == "__main__":
-    from Develop import stworz_zadanie
-
-    Zadanie_43()
-    # stworz_zadanie([Zadanie_43])

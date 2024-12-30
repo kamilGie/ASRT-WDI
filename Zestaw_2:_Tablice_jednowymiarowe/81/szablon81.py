@@ -9,7 +9,5 @@ def Zadanie_81(): ...
 
 
 if __name__ == "__main__":
-    from Develop import stworz_zadanie
 
     Zadanie_81()
-    # stworz_zadanie([Zadanie_81])
