@@ -6,7 +6,7 @@ Każdy folder z zadaniem składa się z czterech składników:
 
 1. **`README.md`** – Zawiera treść zadania, **główne rozwiązanie**. Okazjonalnie, opis rozwiązania.
 2. **`Rozwiązania`** – folder z  gotowymi rozwiązaniami zadania.
-3. **`szablon.py`** – Zawiera szablon do wypełnienia rozwiązaniem. Okazjonalnie **podpowiedzi** lub wyjaśnienia treści.
+3. **`szablon.py`** – Zawiera szablon do wypełnienia rozwiązaniem.
 4. **`testy.py`** – plik z testami jednostkowymi.
 
 
