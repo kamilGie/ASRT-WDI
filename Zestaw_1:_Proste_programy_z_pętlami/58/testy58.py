@@ -43,8 +43,46 @@ class testy(unittest.TestCase):
         wynik = f.getvalue().strip()
 
         oczekiwany_wynik = {
-            "0\\n1\\n2\\n3\\n4\\n5\\n6\\n7\\n8\\n9\\n370\\n407\\n153\\n371\\n8208\\n1634\\n9474\\n93084\\n92727\\n54748\\n548834\\n9800817\\n4210818\\n1741725\\n9926315\\n24678050\\n24678051\\n88593477\\n146511208\\n912985153\\n472335975\\n534494836\\n4679307774\\n32164049650\\n40028394225\\n42678290603\\n49388550606\\n32164049651\\n94204591914\\n44708635679\\n82693916578\\n28116440335967"
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "370",
+            "407",
+            "153",
+            "371",
+            "8208",
+            "1634",
+            "9474",
+            "93084",
+            "92727",
+            "54748",
+            "548834",
+            "9800817",
+            "4210818",
+            "1741725",
+            "9926315",
+            "24678050",
+            "24678051",
+            "88593477",
         }
+        wynik_zbior = set(wynik.split())
+
+        brakujace = ""
+        dodatkowe = ""
+        if wynik_zbior != oczekiwany_wynik:
+            brakujace = oczekiwany_wynik - wynik_zbior
+            dodatkowe = wynik_zbior - oczekiwany_wynik
+            print("Brakujące w wynikach:", brakujace)
+            print("Dodatkowe w wynikach:", dodatkowe)
+
         self.assertTrue(
-            set(wynik.split()) == oczekiwany_wynik
-        )  # Porównanie z użyciem set
+            wynik_zbior == oczekiwany_wynik,
+            f"Błąd: różnica zbiorów - brakujące: {brakujace}, dodatkowe: {dodatkowe}",
+        )

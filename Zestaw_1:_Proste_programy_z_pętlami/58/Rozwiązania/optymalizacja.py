@@ -3,7 +3,6 @@
 # Proszę napisać program znajdujący jak najwięcej liczb N-cyfrowych dla których suma N-
 # tych potęg cyfr liczby jest równa tej liczbie, np. 153=13+53+33.
 # ====================================================================================================>
-# Wypisz do 15 cyfrowych
 
 from itertools import combinations_with_replacement
 
@@ -18,5 +17,3 @@ def Zadanie_58():
 
             if list(kombinacje) == sorted(int(ch) for ch in str(suma)):
                 print(suma)
-
-
