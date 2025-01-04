@@ -1,5 +1,13 @@
-# ASRT-WDI 
-## Automatyczne Szablony, Rozwiązania i Testy do WDI na AGH
+<p align="center">
+  <picture>
+    <source srcset="https://github.com/user-attachments/assets/cf6c89d9-9d8c-4bb8-a129-9ae780e8c031" media="(prefers-color-scheme: light)">
+    <source srcset="https://github.com/user-attachments/assets/666a7495-defd-4c2a-81f0-b9b39e58624f" media="(prefers-color-scheme: dark)">
+    <img src="https://github.com/user-attachments/assets/666a7495-defd-4c2a-81f0-b9b39e58624f" alt="Task solution" width="800">
+  </picture>
+</p>
+
+
+
 ### 🔧 Używanie Projektu
 
 Każdy folder z zadaniem składa się z czterech składników:
