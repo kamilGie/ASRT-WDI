@@ -33,3 +33,7 @@ def Zadanie_183(p):
     head = reverse_list(head)
     return head if not carry else Node(1, head)  # potrzeba zwieksznia cyfr liczby
 ```
+# Opis Rozwiązania 
+
+https://github.com/user-attachments/assets/97d538a0-9044-4ce3-9f33-dcbcfe88aea9
+
