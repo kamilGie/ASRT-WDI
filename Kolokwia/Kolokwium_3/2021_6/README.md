@@ -5,10 +5,6 @@
 </picture>
 
 
-
-Jeśli ktoś zna prostsze rozwiązanie, proszę pisać na [pv](https://gieras.pl/).
-
-
 ```python
 class Node:
     def __init__(self, val, next=None):
@@ -50,3 +46,5 @@ def repair(p):
         p = p.next
     return inserted_count
 ```
+
+Precyzyjne rozwiązanie eliminujące problemy związane z zaokrąglaniem liczb zmiennoprzecinkowych w \Rozwiązania\precyzyjne.py
