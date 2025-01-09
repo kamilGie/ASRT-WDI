@@ -7,14 +7,37 @@
 # Proszę napisać program, który znajduje K-tą liczbę w zadanym przedziale [L, U ], która jest
 # jednocześnie jedno-kwadratowa i pierwsza.
 # ====================================================================================================>
-# zadanie_46(3,0,1000000) -> return 3 liczba ktora spelnia wymagania w przedziale od 0 do 10000000
+# zadanie_46(0,1000000,3) -> return 3 liczba ktora spelnia wymagania w przedziale od 0 do 10000000
 
 
-def Zadanie_46(): ...
+def jest_pierwsza(n):
+    if n < 2:
+        return False
+    for i in range(2, int(n**0.5) + 1):
+        if n % i == 0:
+            return False
+    return True
 
 
-if __name__ == "__main__":
-    from Develop import stworz_zadanie
+def jednokwadratowa(n):
+    while n != 1 and n != 4:
+        suma_kwadratow = 0
+        kopia = n
+        while kopia > 0:
+            cyfra = kopia % 10
+            suma_kwadratow += cyfra**2
+            kopia //= 10
+        n = suma_kwadratow
+    return n == 1
 
-    Zadanie_46()
-    # stworz_zadanie([Zadanie_46])
+
+def Zadanie_46(L, U, K):
+    znalezione = 0
+    for liczba in range(L, U + 1):
+        if jest_pierwsza(liczba) and jednokwadratowa(liczba):
+            znalezione += 1
+            if znalezione == K:
+                return liczba
+    return None
+
+

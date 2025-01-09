@@ -37,7 +37,13 @@ def get_value(p, n) -> Node | None:
 
 
 def initialize_set(p) -> Node:
-    """inicjalizującą tablicę"""
+    """
+    Tablica rzadka przechowa tylko wartości  wraz z ich indeksami, np. w postaci listy Przykład:
+    Zwykła tablica:
+    [None,None,5,None,None,None,8,None,None,3]
+    Tablica rzadka
+    [(2,5),(6,8),(9,3)]
+    """
     head = current = Node(None)  # z wartownikiem
     indeks = 0
     while p:

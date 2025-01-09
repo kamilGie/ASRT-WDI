@@ -16,3 +16,11 @@ def wypis(p):  # z wykladu
         print(p.val)
         p = p.next
 ```
+
+# Opis Rozwiązania 
+
+## Wyjaśnienie struktur odsyłaczowych w 4 minuty
+
+[![Wyjaśnienie struktur odszyfrowujących](https://img.youtube.com/vi/F8AbOfQwl1c/0.jpg)](https://www.youtube.com/watch?v=F8AbOfQwl1c)
+
+Teoria wystarczająca, aby rozwiązać połowę zadań z tego zestawu.

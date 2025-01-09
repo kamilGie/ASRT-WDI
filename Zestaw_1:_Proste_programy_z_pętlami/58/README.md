@@ -5,20 +5,21 @@
 </picture>
 
 ```python
-from itertools import combinations_with_replacement
+N = 8
 
-N = 15
+
+def suma_poteg_cyfr(liczba, n):
+    suma = 0
+    while liczba > 0:
+        cyfra = liczba % 10
+        suma += cyfra**n
+        liczba //= 10
+    return suma
 
 
 def Zadanie_58():
-    ilosci_zer = len(str(10**N))
-    for dlugosci in range(ilosci_zer):
-        for kombinacje in combinations_with_replacement(range(10), dlugosci):
-            suma = sum(liczba**dlugosci for liczba in kombinacje)
-
-            if list(kombinacje) == sorted(int(ch) for ch in str(suma)):
-                print(suma)
-
-
-
+    for n in range(1, N + 1):
+        for liczba in range(10 ** (n - 1) - 1, 10**n):
+            if liczba == suma_poteg_cyfr(liczba, n):
+                print(liczba)
 ```
