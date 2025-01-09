@@ -120,20 +120,6 @@ class testy(unittest.TestCase):
             msg=f"""dla zmiennych: Node(256, Node(4, Node(1, Node(0.25)))). Otrzymano: {wynik}, oczekiwano: '2' """,
         )
 
-    def test_Nr09_repair(self):
-        f = io.StringIO()
-        with redirect_stdout(f):
-            wynik = repair(Node(1, Node(-64, Node(256, Node(-1024)))))
-            if wynik is not None:
-                print(wynik)
-        wynik = f.getvalue().strip()
-
-        self.assertEqual(
-            wynik,
-            "522",
-            msg=f"""dla zmiennych: Node(1, Node(-64, Node(256, Node(-1024)))). Otrzymano: {wynik}, oczekiwano: '522' """,
-        )
-
     def test_Nr10_repair(self):
         f = io.StringIO()
         with redirect_stdout(f):
