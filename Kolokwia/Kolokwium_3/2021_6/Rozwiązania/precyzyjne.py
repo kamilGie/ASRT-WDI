@@ -14,7 +14,7 @@
 # Można założyć, że lista wejściowa liczy więcej niż 2 elementy i każdy element
 # listy jest liczbą całkowitą rózną od 0 (iloraz ciągu nie musi być całkowity).
 # ====================================================================================================>
-
+# Rozwiązane przez https://github.com/czyz-bartosz
 
 class Node:
     def __init__(self, val, next=None):
