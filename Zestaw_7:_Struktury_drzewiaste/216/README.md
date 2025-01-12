@@ -19,3 +19,9 @@ def Zadanie_216(p, min_val=float("-inf"), max_val=float("inf")):
         return False
     return Zadanie_216(p.left, min_val, p.val) and Zadanie_216(p.right, p.val, max_val)
 ```
+
+---
+### Sprawdź też moje inne projekty z odpowiedziami:
+- [Rosnotes-Dyskretna](https://github.com/kamilGie/Rosnotes-Dyskretna) - Premiera wkrótce
+- [Rosnotes-WDI](https://github.com/kamilGie/Rosnotes-WDI) - Premiera wkrótce
+- [ASRT-ASD](https://github.com/kamilGie/Rosnotes-Dyskretna) - Premiera wkrótce

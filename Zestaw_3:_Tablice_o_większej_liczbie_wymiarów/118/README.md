@@ -34,3 +34,10 @@ Po usunięciu dwóch wież cztery pola stają się nieschowane, ale na dwóch z 
 program Wizualizacji w rozwiązaniach pod nazwa `pomoc_szachowania` można sie pobawić
 
 
+
+
+---
+### Sprawdź też moje inne projekty z odpowiedziami:
+- [Rosnotes-Dyskretna](https://github.com/kamilGie/Rosnotes-Dyskretna) - Premiera wkrótce
+- [Rosnotes-WDI](https://github.com/kamilGie/Rosnotes-WDI) - Premiera wkrótce
+- [ASRT-ASD](https://github.com/kamilGie/Rosnotes-Dyskretna) - Premiera wkrótce

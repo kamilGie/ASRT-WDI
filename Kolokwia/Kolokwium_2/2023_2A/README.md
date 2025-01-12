@@ -66,3 +66,10 @@ Przechodzimy przez oba lustra i sprawdzamy, czy ich obrót wyśle laser do końc
     <video src="https://github.com/user-attachments/assets/bdd8c0d3-ea93-4d61-8bf2-59e2d0e163e5" width="400" />
 </div>
 Kod do wizualizacji znajduje się w folderze "rozwiązania". Można zmieniać ogród, ale jego wymiary muszą wynosić 6x6.
+
+
+---
+### Sprawdź też moje inne projekty z odpowiedziami:
+- [Rosnotes-Dyskretna](https://github.com/kamilGie/Rosnotes-Dyskretna) - Premiera wkrótce
+- [Rosnotes-WDI](https://github.com/kamilGie/Rosnotes-WDI) - Premiera wkrótce
+- [ASRT-ASD](https://github.com/kamilGie/Rosnotes-Dyskretna) - Premiera wkrótce

@@ -73,3 +73,10 @@ def hanoi_wikipedia(n, a="a", b="b", c="c"):
 [Link do Wikipedi](https://en.wikipedia.org/wiki/Tower_of_Hanoi#Iterative_solution)
 
 Dokładnie ten algorytm tłumaczył Scifun w filmie w [tym momencie](https://youtu.be/iG4lHkfuu8I?t=354)
+
+
+---
+### Sprawdź też moje inne projekty z odpowiedziami:
+- [Rosnotes-Dyskretna](https://github.com/kamilGie/Rosnotes-Dyskretna) - Premiera wkrótce
+- [Rosnotes-WDI](https://github.com/kamilGie/Rosnotes-WDI) - Premiera wkrótce
+- [ASRT-ASD](https://github.com/kamilGie/Rosnotes-Dyskretna) - Premiera wkrótce

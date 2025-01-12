@@ -9,3 +9,10 @@ def fibonacci(n, a=0, b=1):
     """ Rekurencyjna wersja `for`, wykonując się, dopóki `n` jest większe niż 0. """
     return fibonacci(n - 1, b, a + b) if n > 0 else a
 ```
+
+
+---
+### Sprawdź też moje inne projekty z odpowiedziami:
+- [Rosnotes-Dyskretna](https://github.com/kamilGie/Rosnotes-Dyskretna) - Premiera wkrótce
+- [Rosnotes-WDI](https://github.com/kamilGie/Rosnotes-WDI) - Premiera wkrótce
+- [ASRT-ASD](https://github.com/kamilGie/Rosnotes-Dyskretna) - Premiera wkrótce
