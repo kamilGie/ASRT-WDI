@@ -30,3 +30,9 @@ def repair(p) -> Node:
     even_tail.next = None
     return odd_head.next  # bez wartownika
 ```
+
+---
+### Sprawdź też moje inne projekty z odpowiedziami:
+- [Rosnotes-Dyskretna](https://github.com/kamilGie/Rosnotes-Dyskretna) - Premiera wkrótce
+- [Rosnotes-WDI](https://github.com/kamilGie/Rosnotes-WDI) - Premiera wkrótce
+- [ASRT-ASD](https://github.com/kamilGie/Rosnotes-Dyskretna) - Premiera wkrótce

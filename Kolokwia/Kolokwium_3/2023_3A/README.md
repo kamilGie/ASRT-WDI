@@ -67,3 +67,10 @@ def Zadanie_3A(T):
             out = max(out, val)  # najwyższa wartość
     return out
 ```
+
+
+---
+### Sprawdź też moje inne projekty z odpowiedziami:
+- [Rosnotes-Dyskretna](https://github.com/kamilGie/Rosnotes-Dyskretna) - Premiera wkrótce
+- [Rosnotes-WDI](https://github.com/kamilGie/Rosnotes-WDI) - Premiera wkrótce
+- [ASRT-ASD](https://github.com/kamilGie/Rosnotes-Dyskretna) - Premiera wkrótce

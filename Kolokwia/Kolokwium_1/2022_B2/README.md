@@ -44,3 +44,10 @@ def square(T):
 Jest to, jak zwykle, najprostsze rozwiązanie, choć nie najbardziej optymalne. Oczywistym usprawnieniem byłoby ulepszenie funkcji `dwa_rozne_czyniki`, aby działała szybciej, np. iterując co 2 lub nawet co 6.
 
 Ciekawym ulepszeniem byłaby również zmiana każdego elementu tablicy na krotke jego rozkładu na czynniki pierwsze i wyszukiwanie tych kwadratów, które mają dokładnie 2 lub 1 czynnik, i  zbior 4 krotek zbudowanych przez boki musi zawierac 2 elementy
+
+
+---
+### Sprawdź też moje inne projekty z odpowiedziami:
+- [Rosnotes-Dyskretna](https://github.com/kamilGie/Rosnotes-Dyskretna) - Premiera wkrótce
+- [Rosnotes-WDI](https://github.com/kamilGie/Rosnotes-WDI) - Premiera wkrótce
+- [ASRT-ASD](https://github.com/kamilGie/Rosnotes-Dyskretna) - Premiera wkrótce

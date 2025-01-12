@@ -36,3 +36,10 @@ Jeśli kwadrat istnieje i nie zawiera punktów w środku, jego wierzchołki będ
 </div>
     
 Program wizualizacji znajduje się w rozwiązaniach. Klawisz `spacja` resetuje kwadrat, a klawisz `r` resetuje punkty.
+
+
+---
+### Sprawdź też moje inne projekty z odpowiedziami:
+- [Rosnotes-Dyskretna](https://github.com/kamilGie/Rosnotes-Dyskretna) - Premiera wkrótce
+- [Rosnotes-WDI](https://github.com/kamilGie/Rosnotes-WDI) - Premiera wkrótce
+- [ASRT-ASD](https://github.com/kamilGie/Rosnotes-Dyskretna) - Premiera wkrótce

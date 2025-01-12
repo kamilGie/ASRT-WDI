@@ -58,3 +58,10 @@ def cykl(x):
     res = rek(x, 0)
     return ( res if len(res) < 10 else "")  # jesli napis jest krotszy niz 10 to znaleziono taki cykl
 ```
+
+
+---
+### Sprawdź też moje inne projekty z odpowiedziami:
+- [Rosnotes-Dyskretna](https://github.com/kamilGie/Rosnotes-Dyskretna) - Premiera wkrótce
+- [Rosnotes-WDI](https://github.com/kamilGie/Rosnotes-WDI) - Premiera wkrótce
+- [ASRT-ASD](https://github.com/kamilGie/Rosnotes-Dyskretna) - Premiera wkrótce

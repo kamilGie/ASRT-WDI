@@ -52,3 +52,10 @@ Nachodzenie zachodzi, jeśli kwadrat nie leży całkowicie po lewej, prawej, pon
   <video src="https://github.com/user-attachments/assets/d0757c79-6cd7-4993-90ca-acfdf58b845d" width="400" />
 </div>
 można potestowac program dostępny w rozwiązaniach 
+
+
+---
+### Sprawdź też moje inne projekty z odpowiedziami:
+- [Rosnotes-Dyskretna](https://github.com/kamilGie/Rosnotes-Dyskretna) - Premiera wkrótce
+- [Rosnotes-WDI](https://github.com/kamilGie/Rosnotes-WDI) - Premiera wkrótce
+- [ASRT-ASD](https://github.com/kamilGie/Rosnotes-Dyskretna) - Premiera wkrótce

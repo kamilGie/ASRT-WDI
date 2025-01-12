@@ -30,3 +30,10 @@ def Zadanie_139(N):
 ## `Zadanie_139`
 
 ![WDI RST](https://github.com/user-attachments/assets/3f2bb7c2-f5ac-4926-b2f7-432ce72d7d36)
+
+
+---
+### Sprawdź też moje inne projekty z odpowiedziami:
+- [Rosnotes-Dyskretna](https://github.com/kamilGie/Rosnotes-Dyskretna) - Premiera wkrótce
+- [Rosnotes-WDI](https://github.com/kamilGie/Rosnotes-WDI) - Premiera wkrótce
+- [ASRT-ASD](https://github.com/kamilGie/Rosnotes-Dyskretna) - Premiera wkrótce

@@ -44,3 +44,10 @@ def Zadanie_103(T):
 # Opis Rozwiązania
 
 ![poziom](https://github.com/user-attachments/assets/5ebd78fb-a2f3-48e9-899b-9e7b52557e2a)
+
+
+---
+### Sprawdź też moje inne projekty z odpowiedziami:
+- [Rosnotes-Dyskretna](https://github.com/kamilGie/Rosnotes-Dyskretna) - Premiera wkrótce
+- [Rosnotes-WDI](https://github.com/kamilGie/Rosnotes-WDI) - Premiera wkrótce
+- [ASRT-ASD](https://github.com/kamilGie/Rosnotes-Dyskretna) - Premiera wkrótce

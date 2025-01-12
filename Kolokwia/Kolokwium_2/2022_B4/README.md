@@ -59,3 +59,10 @@ def move(T):
 > rozwiązaniem, niezależnie od tego, które nieszachowane pole wybierzemy. 
 > Jednak dla prostoty rozwiązań z kolokwiów zdecydowałem się dodać najprostsze rozwiązanie.
 
+
+
+---
+### Sprawdź też moje inne projekty z odpowiedziami:
+- [Rosnotes-Dyskretna](https://github.com/kamilGie/Rosnotes-Dyskretna) - Premiera wkrótce
+- [Rosnotes-WDI](https://github.com/kamilGie/Rosnotes-WDI) - Premiera wkrótce
+- [ASRT-ASD](https://github.com/kamilGie/Rosnotes-Dyskretna) - Premiera wkrótce

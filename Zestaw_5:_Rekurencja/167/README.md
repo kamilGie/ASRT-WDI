@@ -30,3 +30,10 @@ def Zadanie_167(slowo):
 Dla słowa `bbbabbabb` pozycje samogłosek to 3 i 6. Ich odległość wynosi 3, co oznacza, że mamy 3 kombinacje,
 ponieważ możemy zawsze przenieść jedną z liter między lewym a prawym przecięciem, a taka operacja będzie
 możliwa dla każdej odległości.
+
+
+---
+### Sprawdź też moje inne projekty z odpowiedziami:
+- [Rosnotes-Dyskretna](https://github.com/kamilGie/Rosnotes-Dyskretna) - Premiera wkrótce
+- [Rosnotes-WDI](https://github.com/kamilGie/Rosnotes-WDI) - Premiera wkrótce
+- [ASRT-ASD](https://github.com/kamilGie/Rosnotes-Dyskretna) - Premiera wkrótce

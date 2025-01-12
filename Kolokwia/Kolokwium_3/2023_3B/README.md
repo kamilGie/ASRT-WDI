@@ -51,3 +51,10 @@ def make_order(p) -> Node:
         p.next, p = tmp, p.next  # ta zmiana musi nastąpić równocześnie
     return seg1.next  # pomijamy 1szy pusty węzeł - naszego "wartownika"
 ```
+
+
+---
+### Sprawdź też moje inne projekty z odpowiedziami:
+- [Rosnotes-Dyskretna](https://github.com/kamilGie/Rosnotes-Dyskretna) - Premiera wkrótce
+- [Rosnotes-WDI](https://github.com/kamilGie/Rosnotes-WDI) - Premiera wkrótce
+- [ASRT-ASD](https://github.com/kamilGie/Rosnotes-Dyskretna) - Premiera wkrótce

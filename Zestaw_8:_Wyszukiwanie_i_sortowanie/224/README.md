@@ -45,3 +45,10 @@ def Zadanie_224(T, target):
 2. **Liczba porównań**: Wyszukiwanie tercyjne wymaga więcej porównań w każdej iteracji niż binarne, co zwiększa jego czas wykonania.
 
 3. **Efektywność praktyczna**: Wyszukiwanie binarne jest szybsze w praktyce, ponieważ podział na dwie części a nie na trzy.
+
+
+---
+### Sprawdź też moje inne projekty z odpowiedziami:
+- [Rosnotes-Dyskretna](https://github.com/kamilGie/Rosnotes-Dyskretna) - Premiera wkrótce
+- [Rosnotes-WDI](https://github.com/kamilGie/Rosnotes-WDI) - Premiera wkrótce
+- [ASRT-ASD](https://github.com/kamilGie/Rosnotes-Dyskretna) - Premiera wkrótce
