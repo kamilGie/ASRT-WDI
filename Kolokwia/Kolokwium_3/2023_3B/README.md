@@ -5,51 +5,49 @@
 </picture>
 
 ```python
-# Autor rozwiązania Piotr Polański
+
+# Na Podstawie rozwiązania Piotr Polański
 class Node:
     def __init__(self, val, next=None):
         self.val = val
         self.next = next
 
 
-def check(s):  # 0 - rosnący, 1 - bez porządku, 2 - malejący
-    l = len(s)
-    if l == 1 or s[0] == s[1]:
-        return 1  # edge cases: napis 1-literowy lub niemonotoniczny na początku
-    lock = True if ord(s[0]) < ord(s[1]) else False
-    for i in range(l - 1):
-        if lock and s[i + 1] <= s[i]:
+def sprawdz_wariant(val):
+    """Zwraca 0, jeśli napis jest rosnący; 1, jeśli nijaki; 2, jeśli malejący."""
+    czy_rosnacy, czy_malejacy = True, True # flagi sprawdzajace czy napis utrzmuje sie jako rosnacy lub malejacy
+    for i in range(len(val)-1): # przechodze przez caly napis
+        if val[i] < val[i + 1] and czy_rosnacy: # sprawdzam czy napis rosnie jak tak to juz nie moze byc malejacy
+            czy_malejacy = False
+        elif val[i] > val[i + 1] and czy_malejacy: # sprawdzam czy napis maleje jak tak to juz nie moze byc rosnacy
+            czy_rosnacy = False
+        else: # Skoro napis kiedyś nie rósł i kiedyś nie malał albo jest równy to znaczy że jest nijaki
             return 1
-        if not lock and s[i + 1] >= s[i]:
-            return 1
-    # dotarliśmy do końca bez zmiany monotoniczności
-    if lock:
-        return 0  # rosnący
-    return 2  # malejący
+    return 0 if czy_rosnacy else 2
 
 
 def make_order(p) -> Node:
-    seg1 = Node(None)
-    seg1.next = Node(None)
-    seg2 = seg1.next
-    seg2.val = ""
-    seg2.next = Node(None)
-    seg3 = seg2.next
-    seg3.val = ""  # przygotowana odpowiednio lista - wskaźniki na wszystkie 3 elementy, lista w formie: seg1 -> seg2 -> seg3 -> None
-    while p != None:
-        variant = check(p.val)
-        if (
-            variant == 0
-        ):  # wskazujemy węzeł początkowy bloku, do którego dopinamy węzeł wskazany przez p
-            q = seg1
-        elif variant == 1:
-            q = seg2
+    # Tworzenie list pomocniczych z wartownikiem i separatorami odrazu polączone
+    malejacy = Node("")
+    nijaki = Node("", malejacy)
+    rosnacy = Node(None, nijaki)
+
+    while p:
+        next_p = p.next # Zapamiętuje następny element by móc odłączyć łańcuch
+        wariant = sprawdz_wariant(p.val) # 0 wartość rosnie 1 wartość nijaka 2 wartość maleje
+        if wariant == 0:
+            p.next = rosnacy.next # Dodaje po wartowiku
+            rosnacy.next = p
+        elif wariant == 1:
+            p.next = nijaki.next # Dodaje po separatorze
+            nijaki.next = p
         else:
-            q = seg3
-        tmp = q.next
-        q.next = p
-        p.next, p = tmp, p.next  # ta zmiana musi nastąpić równocześnie
-    return seg1.next  # pomijamy 1szy pusty węzeł - naszego "wartownika"
+            p.next = malejacy.next # Dodaje po separatorze
+            malejacy.next = p
+
+        p = next_p
+
+    return rosnacy.next # Usuwam wartownika
 ```
 
 
