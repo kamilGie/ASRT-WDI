@@ -6,7 +6,7 @@
 
 ```python
 
-# Na Podstawie rozwiązania Piotr Polański
+# Na Podstawie rozwiązania Piotra Polańskiego
 class Node:
     def __init__(self, val, next=None):
         self.val = val
@@ -15,11 +15,11 @@ class Node:
 
 def sprawdz_wariant(val):
     """Zwraca 0, jeśli napis jest rosnący; 1, jeśli nijaki; 2, jeśli malejący."""
-    czy_rosnacy, czy_malejacy = True, True # flagi sprawdzajace czy napis utrzmuje sie jako rosnacy lub malejacy
-    for i in range(len(val)-1): # przechodze przez caly napis
-        if val[i] < val[i + 1] and czy_rosnacy: # sprawdzam czy napis rosnie jak tak to juz nie moze byc malejacy
+    czy_rosnacy, czy_malejacy = True, True # Flagi sprawdzające czy napis utrzymuję sie jako rosnący lub malejący
+    for i in range(len(val)-1): # Przechodzę przez caly napis
+        if val[i] < val[i + 1] and czy_rosnacy: # Sprawdzam czy napis rośnię jak tak to juz nie może byc malejący
             czy_malejacy = False
-        elif val[i] > val[i + 1] and czy_malejacy: # sprawdzam czy napis maleje jak tak to juz nie moze byc rosnacy
+        elif val[i] > val[i + 1] and czy_malejacy: # Sprawdzam czy napis maleje jak tak to już nie może być rosnący
             czy_rosnacy = False
         else: # Skoro napis kiedyś nie rósł i kiedyś nie malał albo jest równy to znaczy że jest nijaki
             return 1
@@ -36,7 +36,7 @@ def make_order(p) -> Node:
         next_p = p.next # Zapamiętuje następny element by móc odłączyć łańcuch
         wariant = sprawdz_wariant(p.val) # 0 wartość rosnie 1 wartość nijaka 2 wartość maleje
         if wariant == 0:
-            p.next = rosnacy.next # Dodaje po wartowiku
+            p.next = rosnacy.next # Dodaje po wartowniku
             rosnacy.next = p
         elif wariant == 1:
             p.next = nijaki.next # Dodaje po separatorze
