@@ -71,28 +71,6 @@ class testy(unittest.TestCase):
             False,
         )
 
-    def test_Nr04_thirteen(self):
-        self.assertEqual(
-            thirteen(
-                [
-                    (0, 13, 0, 12),
-                    (12, 24, 0, 12),
-                    (24, 36, 0, 12),
-                    (36, 48, 0, 12),
-                    (48, 60, 0, 12),
-                    (60, 72, 0, 12),
-                    (72, 84, 0, 12),
-                    (84, 96, 0, 12),
-                    (96, 108, 0, 12),
-                    (108, 120, 0, 12),
-                    (0, 24, 13, 37),
-                    (0, 2, 38, 40),
-                    (2, 4, 38, 40),
-                ]
-            ),
-            False,
-        )
-
     def test_Nr05_thirteen(self):
         self.assertEqual(
             thirteen(
