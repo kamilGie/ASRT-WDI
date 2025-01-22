@@ -13,11 +13,25 @@
 # ====================================================================================================>
 
 
-def Zadanie_5C(): ...
+class Node:
+    def __init__(self, val, next=None):
+        self.val = val
+        self.next = next
+
+    def __str__(self):  # wypisywanie
+        return f"{self.val}" + (f" -> {self.next}" if self.next else "")
+
+
+def divide(p): ...
 
 
 if __name__ == "__main__":
-    from Develop import stworz_zadanie
+    from testy2023_5C import odpal_testy, podpowiedz
 
-    Zadanie_5C()
-    # stworz_zadanie([Zadanie_5C])
+    divide(Node(1, Node(8, Node(2, Node(16)))))  # return  (1->2 , 8->16)
+
+    # podpowiedz(1)
+    # podpowiedz(2)
+    # podpowiedz(3)
+
+    odpal_testy()
