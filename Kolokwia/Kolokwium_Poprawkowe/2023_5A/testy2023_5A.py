@@ -53,7 +53,7 @@ def odpal_testy():
 
 def podpowiedz(nr: int):
     podpowiedzi = [
-        "stworzyc dodatowa tablice do przechowywania rozmiaru tablicy",
+        "stworzyc dodatowa tablice do przechowywania rozmiaru kwadratu",
         "budowac kwadrat sprawdzajac gore lewo i prawa gore",
         "https://www.youtube.com/watch?v=nZAyRZC8tko"
     ]
