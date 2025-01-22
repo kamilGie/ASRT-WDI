@@ -13,11 +13,21 @@
 # ====================================================================================================>
 
 
-def Zadanie_4C(): ...
+class Node:
+    def __init__(self, val, next=None):
+        self.val = val
+        self.next = next
+
+    def __str__(self):  # wypisywanie
+        return f"{self.val}" + (f" -> {self.next}" if self.next else "")
+
+
+def repair(p) -> int: ...
 
 
 if __name__ == "__main__":
-    from Develop import stworz_zadanie
+    from testy2023_4C import odpal_testy
 
-    Zadanie_4C()
-    # stworz_zadanie([Zadanie_4C])
+    repair(Node(1, Node(9, Node(27))))
+
+    # odpal_testy()

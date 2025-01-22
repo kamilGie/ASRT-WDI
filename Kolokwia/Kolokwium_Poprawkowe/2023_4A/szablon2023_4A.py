@@ -7,11 +7,12 @@
 # ====================================================================================================>
 
 
-def Zadanie_4A(): ...
+def multi(T): ...
 
 
 if __name__ == "__main__":
-    from Develop import stworz_zadanie
+    from testy2023_4A import odpal_testy
 
-    Zadanie_4A()
-    # stworz_zadanie([Zadanie_4A])
+    multi(list(input("Podaj T: ")))
+
+    # odpal_testy()
