@@ -35,4 +35,20 @@ def square(T):
 
 # Opis Rozwiązania
 
-https://www.youtube.com/watch?v=nZAyRZC8tko
+
+### Szukanie kwadratów
+Szukanie kwadratów w tablicy wartości boolowskich polega na tym, że na brzegach ustawiamy wartość 1, a w pozostałych miejscach bierzemy minimum z komórek: u góry, z lewej oraz po skosie (w górę–lewo) i dodajemy do niego 1.
+
+
+<div align="center"> 
+    <video src="https://github.com/user-attachments/assets/6e259fc2-2215-4774-a315-ebad36b3b73a" width="400" />
+</div>
+
+---
+### Sprawdź też moje inne projekty z odpowiedziami:
+- [Rosnotes-Dyskretna](https://github.com/kamilGie/Rosnotes-Dyskretna) - Premiera wkrótce
+- [Rosnotes-WDI](https://github.com/kamilGie/Rosnotes-WDI) - Premiera wkrótce
+- [ASRT-ASD](https://github.com/kamilGie/ASRT-ASD) - Premiera wkrótce
+
+
+
