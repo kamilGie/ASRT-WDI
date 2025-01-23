@@ -1,12 +1,10 @@
 <picture>
-  <source srcset="../../srt/zbior_zadan/2024_2A.png" media="(prefers-color-scheme: light)">
-  <source srcset="../../srt/zbior_zadan/black_2024_2A.png" media="(prefers-color-scheme: dark)">
-  <img src="../../srt/zbior_zadan/black_2024_2A.png" alt="zadanie 2024_2A">
+  <source srcset="../../../srt/zbior_zadan/2024_2A.png" media="(prefers-color-scheme: light)">
+  <source srcset="../../../srt/zbior_zadan/black_2024_2A.png" media="(prefers-color-scheme: dark)">
+  <img src="../../../srt/zbior_zadan/black_2024_2A.png" alt="zadanie 2024_2A">
 </picture>
 
 ```python
-# takie cos napisalem w zaleznosci jak zostanie ocenione jeszcze bede to zmienial
-
 def cyfry_piatkowe(x):
     """Zwraca zbiór cyfr liczby x w systemie o podstawie 5."""
     res = set()
