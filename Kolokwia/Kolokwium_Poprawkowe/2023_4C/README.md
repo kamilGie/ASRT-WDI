@@ -1,7 +1,7 @@
 <picture>
-  <source srcset="../../../srt/zbior_zadan/209.png" media="(prefers-color-scheme: light)">
-  <source srcset="../../../srt/zbior_zadan/black_209.png" media="(prefers-color-scheme: dark)">
-  <img src="../../../srt/zbior_zadan/black_209.png" alt="zadanie 209">
+  <source srcset="../../../srt/zbior_zadan/2023_4C.png" media="(prefers-color-scheme: light)">
+  <source srcset="../../../srt/zbior_zadan/black_2023_4C.png" media="(prefers-color-scheme: dark)">
+  <img src="../../../srt/zbior_zadan/black_2023_4C.png" alt="zadanie 2023_5A">
 </picture>
 
 ```python
