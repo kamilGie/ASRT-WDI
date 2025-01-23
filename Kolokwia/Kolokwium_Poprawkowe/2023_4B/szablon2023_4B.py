@@ -10,11 +10,26 @@
 # ====================================================================================================>
 
 
-def Zadanie_4B(): ...
+def cutting(slowo):
+    samogloski = ["a", "e", "i", "o", "u"]
+
+    # tablica pozycji samoglosek w slowo
+    pozycje = []
+    for i in range(len(slowo)):
+        if slowo[i] in samogloski:
+            pozycje.append(i)
+
+    # liczba możliwych kombinacji to odległości między samogloskami
+    res = 1
+    for i in range(1, len(pozycje)):
+        res *= pozycje[i] - pozycje[i - 1]
+
+    return res
 
 
 if __name__ == "__main__":
-    from Develop import stworz_zadanie
+    from testy2023_4B import odpal_testy
 
-    Zadanie_4B()
-    # stworz_zadanie([Zadanie_4B])
+    print(cutting("student"))
+
+    odpal_testy()

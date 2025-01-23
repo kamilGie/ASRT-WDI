@@ -1,0 +1,41 @@
+<picture>
+  <source srcset="../../../srt/zbior_zadan/2023_4C.png" media="(prefers-color-scheme: light)">
+  <source srcset="../../../srt/zbior_zadan/black_2023_4C.png" media="(prefers-color-scheme: dark)">
+  <img src="../../../srt/zbior_zadan/black_2023_4C.png" alt="zadanie 2023_5A">
+</picture>
+
+```python
+def NWD(a, b):
+    while b != 0:
+        a, b = b, a % b
+    return a
+
+
+def arithmetic_difference(p):
+    value_nwd = 1
+    r = p.next.val - p.val
+
+    while p.next:
+        value_nwd = NWD(r, (p.next.val - p.val))
+        p = p.next
+    return value_nwd
+
+
+def repair(p):
+    step = arithmetic_difference(p)
+
+    inserted_count = 0
+    while p.next:
+        if ( p.val + step != p.next.val):  # jesli krokiem nie dotarlem do nastpnego elemetu musze go dodac
+            p.next = Node(p.val + step, p.next)
+            inserted_count += 1
+        p = p.next
+    return inserted_count
+```
+
+
+---
+### Sprawdź też moje inne projekty z odpowiedziami:
+- [Rosnotes-Dyskretna](https://github.com/kamilGie/Rosnotes-Dyskretna) - Premiera wkrótce
+- [Rosnotes-WDI](https://github.com/kamilGie/Rosnotes-WDI) - Premiera wkrótce
+- [ASRT-ASD](https://github.com/kamilGie/Rosnotes-Dyskretna) - Premiera wkrótce

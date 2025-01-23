@@ -1,12 +1,10 @@
 <picture>
-  <source srcset="../../srt/zbior_zadan/2024_2A.png" media="(prefers-color-scheme: light)">
-  <source srcset="../../srt/zbior_zadan/black_2024_2A.png" media="(prefers-color-scheme: dark)">
-  <img src="../../srt/zbior_zadan/black_2024_2A.png" alt="zadanie 2024_2A">
+  <source srcset="../../../srt/zbior_zadan/2024_2A.png" media="(prefers-color-scheme: light)">
+  <source srcset="../../../srt/zbior_zadan/black_2024_2A.png" media="(prefers-color-scheme: dark)">
+  <img src="../../../srt/zbior_zadan/black_2024_2A.png" alt="zadanie 2024_2A">
 </picture>
 
 ```python
-# takie cos napisalem w zaleznosci jak zostanie ocenione jeszcze bede to zmienial
-
 def cyfry_piatkowe(x):
     """Zwraca zbiór cyfr liczby x w systemie o podstawie 5."""
     res = set()
@@ -59,14 +57,6 @@ def luck17(T):
 
 Tego seta można zastąpić tablicą 5-elementową lub liczbami w jakiejś dziwnej notacji.
 Jednak w praktyce sprowadzi się to do tego samego. a set bedzie szybszy niz tablica
-
-Podczas kolokwium, gdy ktoś zapytał, czy można tutaj użyć seta, Garek odpowiedział: 
-"Można, ale jest to nieoptymalne. Niech się pan zastanowi, ile jest kombinacji tego zbioru."
-Do tej pory nie rozumiem, o co chodziło w tej podpowiedzi. Gdy się dowiem, poprawię to.
-
-
-
-
 
 ---
 ### Sprawdź też moje inne projekty z odpowiedziami:

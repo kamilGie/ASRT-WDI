@@ -144,7 +144,11 @@ class przesylaczowe_t(prime):
         with redirect_stdout(f):
             wynik = funkcja(*eval(f"[{parametry}]"))
             if wynik is not None:
-                print(wynik)
+                if not isinstance(wynik, Tuple):
+                    print(wynik)
+                else:
+                    for w in wynik:
+                        print(w)
 
         return repr(f.getvalue().strip()), True
 

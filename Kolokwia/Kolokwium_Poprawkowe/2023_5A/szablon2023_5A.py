@@ -8,11 +8,16 @@
 # ====================================================================================================>
 
 
-def Zadanie_5A(): ...
+def square(T): ...
 
 
 if __name__ == "__main__":
-    from Develop import stworz_zadanie
+    from testy2023_5A import odpal_testy, podpowiedz
 
-    Zadanie_5A()
-    # stworz_zadanie([Zadanie_5A])
+    square([ [ 1 ,1 ,1] , [1,9,1],[1,1,1]])  # return 1
+
+    # podpowiedz(1)
+    # podpowiedz(2)
+    # podpowiedz(3)
+
+    # odpal_testy()

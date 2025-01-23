@@ -1,11 +1,10 @@
 <picture>
-  <source srcset="../../srt/zbior_zadan/2024_2B.png" media="(prefers-color-scheme: light)">
-  <source srcset="../../srt/zbior_zadan/black_2024_2B.png" media="(prefers-color-scheme: dark)">
-  <img src="../../srt/zbior_zadan/black_2024_2B.png" alt="zadanie 2024_2B">
+  <source srcset="../../../srt/zbior_zadan/2024_2B.png" media="(prefers-color-scheme: light)">
+  <source srcset="../../../srt/zbior_zadan/black_2024_2B.png" media="(prefers-color-scheme: dark)">
+  <img src="../../../srt/zbior_zadan/black_2024_2B.png" alt="zadanie 2024_2B">
 </picture>
 
 ```python
-# takie cos napisalem w zaleznosci jak zostanie ocenione jeszcze bede to zmienial
 from math import isqrt
 
 
