@@ -1,7 +1,7 @@
 <picture>
-  <source srcset="../../srt/zbior_zadan/2024_3B.png" media="(prefers-color-scheme: light)">
-  <source srcset="../../srt/zbior_zadan/black_2024_3B.png" media="(prefers-color-scheme: dark)">
-  <img src="../../srt/zbior_zadan/black_2024_3B.png" alt="zadanie 2024_3B">
+  <source srcset="../../../srt/zbior_zadan/2024_3B.png" media="(prefers-color-scheme: light)">
+  <source srcset="../../../srt/zbior_zadan/black_2024_3B.png" media="(prefers-color-scheme: dark)">
+  <img src="../../../srt/zbior_zadan/black_2024_3B.png" alt="zadanie 2024_3B">
 </picture>
 
 Takie coś wymyśliłem. W zależności od oceny będę je jeszcze poprawiał.

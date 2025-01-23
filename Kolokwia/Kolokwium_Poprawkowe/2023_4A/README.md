@@ -1,7 +1,7 @@
 <picture>
-  <source srcset="../../srt/zbior_zadan/127.png" media="(prefers-color-scheme: light)">
-  <source srcset="../../srt/zbior_zadan/black_127.png" media="(prefers-color-scheme: dark)">
-  <img src="../../srt/zbior_zadan/black_127.png" alt="zadanie 127">
+  <source srcset="../../../srt/zbior_zadan/127.png" media="(prefers-color-scheme: light)">
+  <source srcset="../../../srt/zbior_zadan/black_127.png" media="(prefers-color-scheme: dark)">
+  <img src="../../../srt/zbior_zadan/black_127.png" alt="zadanie 127">
 </picture>
 
 ```python
