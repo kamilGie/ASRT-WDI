@@ -24,6 +24,6 @@ def rek(A, x, i=0, curr=1, dig_mult=0):
 
 ---
 ### Sprawdź też moje inne projekty z odpowiedziami:
-- [Rosnotes-Dyskretna](https://github.com/kamilGie/Rosnotes-Dyskretna) - Premiera wkrótce
+- [Rosnotes-Dyskretna](https://github.com/kamilGie/Rosnotes-Dyskretna)
 - [Rosnotes-WDI](https://github.com/kamilGie/Rosnotes-WDI) - Premiera wkrótce
 - [ASRT-ASD](https://github.com/kamilGie/Rosnotes-Dyskretna) - Premiera wkrótce
