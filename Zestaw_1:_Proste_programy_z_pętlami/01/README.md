@@ -14,6 +14,3 @@ def Zadanie_1(n):
                 print(a, b, c)
 
 ```
-
----
-Twoja gwiazdka pomaga w rozwoju repozytorium ⭐
