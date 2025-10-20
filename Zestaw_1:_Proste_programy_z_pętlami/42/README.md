@@ -22,6 +22,3 @@ def Zadanie_42(a, b):
 
 ```
 
----
-### Sprawdź też moje inne projekty z odpowiedziami:
-- [Rosnotes-Dyskretna](https://github.com/kamilGie/Rosnotes-Dyskretna)

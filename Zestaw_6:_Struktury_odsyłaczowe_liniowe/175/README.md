@@ -38,6 +38,3 @@ def delete_node(head, value) -> Node:
     return head  # nie bylo value
 ```
 
----
-### Sprawdź też moje inne projekty z odpowiedziami:
-- [Rosnotes-Dyskretna](https://github.com/kamilGie/Rosnotes-Dyskretna)

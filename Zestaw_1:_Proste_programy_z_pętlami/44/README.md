@@ -42,6 +42,3 @@ def Zadanie_44(N):
 
 ```
 
----
-### Sprawdź też moje inne projekty z odpowiedziami:
-- [Rosnotes-Dyskretna](https://github.com/kamilGie/Rosnotes-Dyskretna)

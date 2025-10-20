@@ -35,6 +35,3 @@ def Zadanie_190(p):
     return head.next  # pomijamy wartownika
 ```
 
----
-### Sprawdź też moje inne projekty z odpowiedziami:
-- [Rosnotes-Dyskretna](https://github.com/kamilGie/Rosnotes-Dyskretna)

@@ -20,6 +20,3 @@ def Zadanie_216(p, min_val=float("-inf"), max_val=float("inf")):
     return Zadanie_216(p.left, min_val, p.val) and Zadanie_216(p.right, p.val, max_val)
 ```
 
----
-### Sprawdź też moje inne projekty z odpowiedziami:
-- [Rosnotes-Dyskretna](https://github.com/kamilGie/Rosnotes-Dyskretna)

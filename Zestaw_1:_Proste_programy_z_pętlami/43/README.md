@@ -25,5 +25,4 @@ def Zadanie_43(S):
 ```
 
 ---
-### Sprawdź też moje inne projekty z odpowiedziami:
-- [Rosnotes-Dyskretna](https://github.com/kamilGie/Rosnotes-Dyskretna)
+Gwiazdka motywuje do rozwijania projektu 👍

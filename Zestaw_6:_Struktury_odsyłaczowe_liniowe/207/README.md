@@ -25,6 +25,3 @@ def Zadanie_207(head, new_string) -> bool:
             return False
 ```
 
----
-### Sprawdź też moje inne projekty z odpowiedziami:
-- [Rosnotes-Dyskretna](https://github.com/kamilGie/Rosnotes-Dyskretna)

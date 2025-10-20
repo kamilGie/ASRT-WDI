@@ -38,6 +38,3 @@ def usun_liscie(p) -> Node:
     return p
 ```
 
----
-### Sprawdź też moje inne projekty z odpowiedziami:
-- [Rosnotes-Dyskretna](https://github.com/kamilGie/Rosnotes-Dyskretna)

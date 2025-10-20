@@ -42,6 +42,3 @@ Szukamy ustawienia 8 hetmanów tak, aby żaden z nich nie atakował innego, wyko
 Program wizu w `Rozwiązania`
 
 
----
-### Sprawdź też moje inne projekty z odpowiedziami:
-- [Rosnotes-Dyskretna](https://github.com/kamilGie/Rosnotes-Dyskretna)

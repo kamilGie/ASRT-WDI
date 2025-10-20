@@ -26,6 +26,3 @@ def wypis(p):  # z wykladu
 Teoria wystarczająca, aby rozwiązać połowę zadań z tego zestawu.
 
 
----
-### Sprawdź też moje inne projekty z odpowiedziami:
-- [Rosnotes-Dyskretna](https://github.com/kamilGie/Rosnotes-Dyskretna)

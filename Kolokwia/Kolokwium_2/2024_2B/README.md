@@ -60,5 +60,4 @@ def cykl(x):
 
 
 ---
-### Sprawdź też moje inne projekty z odpowiedziami:
-- [Rosnotes-Dyskretna](https://github.com/kamilGie/Rosnotes-Dyskretna)
+Jeśli repo się podoba, zostaw gwiazdkę 👍

@@ -43,6 +43,3 @@ Jest to, jak zwykle, najprostsze rozwiązanie, choć nie najbardziej optymalne. 
 Ciekawym ulepszeniem byłaby również zmiana każdego elementu tablicy na krotke jego rozkładu na czynniki pierwsze i wyszukiwanie tych kwadratów, które mają dokładnie 2 lub 1 czynnik, i  zbior 4 krotek zbudowanych przez boki musi zawierac 2 elementy
 
 
----
-### Sprawdź też moje inne projekty z odpowiedziami:
-- [Rosnotes-Dyskretna](https://github.com/kamilGie/Rosnotes-Dyskretna)

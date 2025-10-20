@@ -73,6 +73,3 @@ Alternatywnie, można opracować bardziej optymalne podejście, które przekszta
 ###  Jednak takie rozwiązanie nie byłoby tak przejrzyste i proste jak obecne.
 
 
----
-### Sprawdź też moje inne projekty z odpowiedziami:
-- [Rosnotes-Dyskretna](https://github.com/kamilGie/Rosnotes-Dyskretna)

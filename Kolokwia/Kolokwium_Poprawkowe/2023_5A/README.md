@@ -44,9 +44,6 @@ Szukanie kwadratów w tablicy wartości boolowskich polega na tym, że na brzega
     <video src="https://github.com/user-attachments/assets/6e259fc2-2215-4774-a315-ebad36b3b73a" width="400" />
 </div>
 
----
-### Sprawdź też moje inne projekty z odpowiedziami:
-- [Rosnotes-Dyskretna](https://github.com/kamilGie/Rosnotes-Dyskretna)
 - [ASRT-ASD](https://github.com/kamilGie/ASRT-ASD) - Premiera wkrótce
 
 

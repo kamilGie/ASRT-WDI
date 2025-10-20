@@ -44,6 +44,3 @@ def Zadanie_218_iter(p, val) -> Node:
     return p
 ```
 
----
-### Sprawdź też moje inne projekty z odpowiedziami:
-- [Rosnotes-Dyskretna](https://github.com/kamilGie/Rosnotes-Dyskretna)
