@@ -14,7 +14,3 @@ def Zadanie_1(n):
                 print(a, b, c)
 
 ```
-
----
-### Sprawdź też moje inne projekty z odpowiedziami:
-- [Rosnotes-Dyskretna](https://github.com/kamilGie/Rosnotes-Dyskretna)

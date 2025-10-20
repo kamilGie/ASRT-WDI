@@ -190,6 +190,3 @@ def wezly_z_jednym_potomkiem_iter(p):
     return count
 ```
 
----
-### Sprawdź też moje inne projekty z odpowiedziami:
-- [Rosnotes-Dyskretna](https://github.com/kamilGie/Rosnotes-Dyskretna)

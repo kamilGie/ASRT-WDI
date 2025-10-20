@@ -25,6 +25,3 @@ def Zadanie_196(head):
     return False  # Jeśli fast osiągnie None, brak cyklu
 ```
 
----
-### Sprawdź też moje inne projekty z odpowiedziami:
-- [Rosnotes-Dyskretna](https://github.com/kamilGie/Rosnotes-Dyskretna)

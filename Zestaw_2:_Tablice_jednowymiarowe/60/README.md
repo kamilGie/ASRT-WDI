@@ -27,5 +27,4 @@ def Zadanie_60(liczba):
 
 
 ---
-### Sprawdź też moje inne projekty z odpowiedziami:
-- [Rosnotes-Dyskretna](https://github.com/kamilGie/Rosnotes-Dyskretna)
+Jeśli kod był pomocny, zostaw gwiazdkę ⭐

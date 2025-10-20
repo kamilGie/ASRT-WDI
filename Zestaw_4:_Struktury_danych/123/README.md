@@ -46,6 +46,3 @@ def leng_of_longest_geometric_subsequence(sequence):
 
 ```
 
----
-### Sprawdź też moje inne projekty z odpowiedziami:
-- [Rosnotes-Dyskretna](https://github.com/kamilGie/Rosnotes-Dyskretna)

@@ -55,6 +55,3 @@ def n_liczba_z_pierwiastka_z_2(n):
 
 ```
 
----
-### Sprawdź też moje inne projekty z odpowiedziami:
-- [Rosnotes-Dyskretna](https://github.com/kamilGie/Rosnotes-Dyskretna)

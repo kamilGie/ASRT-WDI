@@ -25,6 +25,3 @@ def Zadanie_186(head, word) -> bool:
     return True
 ```
 
----
-### Sprawdź też moje inne projekty z odpowiedziami:
-- [Rosnotes-Dyskretna](https://github.com/kamilGie/Rosnotes-Dyskretna)

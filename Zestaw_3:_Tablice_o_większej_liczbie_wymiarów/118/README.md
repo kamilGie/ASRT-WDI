@@ -36,6 +36,3 @@ program Wizualizacji w rozwiązaniach pod nazwa `pomoc_szachowania` można sie p
 
 
 
----
-### Sprawdź też moje inne projekty z odpowiedziami:
-- [Rosnotes-Dyskretna](https://github.com/kamilGie/Rosnotes-Dyskretna)

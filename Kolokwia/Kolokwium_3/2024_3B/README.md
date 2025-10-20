@@ -54,7 +54,4 @@ def fix(p):
     return sorted_list, new_list_head.next
 ```
 
----
-### Sprawdź też moje inne projekty z odpowiedziami:
-- [Rosnotes-Dyskretna](https://github.com/kamilGie/Rosnotes-Dyskretna)
 - [ASRT-ASD](https://github.com/kamilGie/ASRT-ASD) - Premiera wkrótce

@@ -50,6 +50,3 @@ def repair(node):
 Precyzyjne rozwiązanie eliminujące problemy związane z zaokrąglaniem liczb zmiennoprzecinkowych w \Rozwiązania\precyzyjne.py
 
 
----
-### Sprawdź też moje inne projekty z odpowiedziami:
-- [Rosnotes-Dyskretna](https://github.com/kamilGie/Rosnotes-Dyskretna)

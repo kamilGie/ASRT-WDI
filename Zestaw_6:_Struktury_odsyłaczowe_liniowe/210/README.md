@@ -27,5 +27,4 @@ def iloczyn(z1, z2, z3):
 ```
 
 ---
-### Sprawdź też moje inne projekty z odpowiedziami:
-- [Rosnotes-Dyskretna](https://github.com/kamilGie/Rosnotes-Dyskretna)
+Jeśli Ci się przydało, miło będzie za gwiazdkę 👍

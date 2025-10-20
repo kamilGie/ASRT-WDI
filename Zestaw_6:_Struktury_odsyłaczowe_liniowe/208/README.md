@@ -35,6 +35,3 @@ def Zadanie_208(p, k):
             return removed
 ```
 
----
-### Sprawdź też moje inne projekty z odpowiedziami:
-- [Rosnotes-Dyskretna](https://github.com/kamilGie/Rosnotes-Dyskretna)

@@ -31,6 +31,3 @@ def repair(p) -> Node:
     return odd_head.next  # bez wartownika
 ```
 
----
-### Sprawdź też moje inne projekty z odpowiedziami:
-- [Rosnotes-Dyskretna](https://github.com/kamilGie/Rosnotes-Dyskretna)

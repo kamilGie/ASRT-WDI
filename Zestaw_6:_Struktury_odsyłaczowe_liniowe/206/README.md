@@ -26,6 +26,3 @@ def Zadanie_206(p, q):
     return head.next
 ```
 
----
-### Sprawdź też moje inne projekty z odpowiedziami:
-- [Rosnotes-Dyskretna](https://github.com/kamilGie/Rosnotes-Dyskretna)

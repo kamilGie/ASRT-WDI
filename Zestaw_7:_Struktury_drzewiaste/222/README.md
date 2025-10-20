@@ -74,5 +74,4 @@ zadanie na podstawie https://home.agh.edu.pl/~turcza/ts/1_Huffman.pdf
 
 
 ---
-### Sprawdź też moje inne projekty z odpowiedziami:
-- [Rosnotes-Dyskretna](https://github.com/kamilGie/Rosnotes-Dyskretna)
+Jeśli kod był pomocny, zostaw gwiazdkę ✨

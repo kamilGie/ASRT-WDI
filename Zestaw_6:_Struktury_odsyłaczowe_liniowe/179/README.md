@@ -39,6 +39,3 @@ def Zadanie_179(head) -> Node:
     return result_sentinel.next
 ```
 
----
-### Sprawdź też moje inne projekty z odpowiedziami:
-- [Rosnotes-Dyskretna](https://github.com/kamilGie/Rosnotes-Dyskretna)

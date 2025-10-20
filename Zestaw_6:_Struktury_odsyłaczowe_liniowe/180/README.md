@@ -19,6 +19,3 @@ def push_back(p, val) -> Node:
     return head
 ```
 
----
-### Sprawdź też moje inne projekty z odpowiedziami:
-- [Rosnotes-Dyskretna](https://github.com/kamilGie/Rosnotes-Dyskretna)

@@ -58,6 +58,3 @@ def luck17(T):
 Tego seta można zastąpić tablicą 5-elementową lub liczbami w jakiejś dziwnej notacji.
 Jednak w praktyce sprowadzi się to do tego samego. a set bedzie szybszy niz tablica
 
----
-### Sprawdź też moje inne projekty z odpowiedziami:
-- [Rosnotes-Dyskretna](https://github.com/kamilGie/Rosnotes-Dyskretna)

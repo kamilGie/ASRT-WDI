@@ -43,5 +43,4 @@ def Zadanie_67(T) -> bool:
 ```
 
 ---
-### Sprawdź też moje inne projekty z odpowiedziami:
-- [Rosnotes-Dyskretna](https://github.com/kamilGie/Rosnotes-Dyskretna)
+Jeśli kod był pomocny, zostaw gwiazdkę ✨

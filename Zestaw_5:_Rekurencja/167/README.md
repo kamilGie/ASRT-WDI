@@ -32,6 +32,3 @@ ponieważ możemy zawsze przenieść jedną z liter między lewym a prawym przec
 możliwa dla każdej odległości.
 
 
----
-### Sprawdź też moje inne projekty z odpowiedziami:
-- [Rosnotes-Dyskretna](https://github.com/kamilGie/Rosnotes-Dyskretna)

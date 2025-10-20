@@ -64,5 +64,4 @@ def Zadanie_126(a, b, c):
 ```
 
 ---
-### Sprawdź też moje inne projekty z odpowiedziami:
-- [Rosnotes-Dyskretna](https://github.com/kamilGie/Rosnotes-Dyskretna)
+Twoja gwiazdka pomaga w rozwoju repozytorium 🤝

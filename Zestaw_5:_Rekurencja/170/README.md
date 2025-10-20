@@ -45,6 +45,3 @@ i odkładane na stos, zgodnie z definicją funkcji Ackermanna:
 Proces trwa, dopóki na stosie nie zostanie tylko jedna wartość.
 
 
----
-### Sprawdź też moje inne projekty z odpowiedziami:
-- [Rosnotes-Dyskretna](https://github.com/kamilGie/Rosnotes-Dyskretna)

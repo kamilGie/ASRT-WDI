@@ -70,5 +70,4 @@ def Zadanie_130(liczba1: str, liczba2: str) -> str:
 
 
 ---
-### Sprawdź też moje inne projekty z odpowiedziami:
-- [Rosnotes-Dyskretna](https://github.com/kamilGie/Rosnotes-Dyskretna)
+Jeśli Ci się przydało, miło będzie za gwiazdkę ⭐

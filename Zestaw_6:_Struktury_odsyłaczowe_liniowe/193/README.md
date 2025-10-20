@@ -28,6 +28,3 @@ def Zadanie_193(head):
     return removed_count
 ```
 
----
-### Sprawdź też moje inne projekty z odpowiedziami:
-- [Rosnotes-Dyskretna](https://github.com/kamilGie/Rosnotes-Dyskretna)

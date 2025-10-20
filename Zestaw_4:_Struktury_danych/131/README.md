@@ -37,6 +37,3 @@ def pomnoz(liczba1, liczba2):
 ```
 
 
----
-### Sprawdź też moje inne projekty z odpowiedziami:
-- [Rosnotes-Dyskretna](https://github.com/kamilGie/Rosnotes-Dyskretna)
